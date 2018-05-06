@@ -7,7 +7,7 @@
     ==================================================
     -->
     <meta charset="UTF-8">
-    <title>About Us</title>
+    <title>Home</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--
@@ -18,12 +18,16 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/elegant-icons/style.css" rel="stylesheet">
     <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="vendor/css-hamburgers/dist/hamburgers.min.css" rel="stylesheet">
     <link href="vendor/chosen/chosen.css" rel="stylesheet">
     <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="vendor/plyr/plyr.min.css" rel="stylesheet">
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="vendor/revolution/css/layers.css" rel="stylesheet">
+    <link href="vendor/revolution/css/navigation.css" rel="stylesheet">
+    <link href="vendor/revolution/css/settings.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/switcher.css" rel="stylesheet">
     <link href="css/colors/primary.css" rel="stylesheet" id="colors">
@@ -46,61 +50,136 @@
 </head>
 
 <body>
-    <!-- page load-->
-    <div class="page-loader">
-        <div class="loader"></div>
-    </div>
-    <header>
-        <!-- header / start-->
-        <div class="hidden-tablet-landscape-up">
-            <div class="header header-mobile-1">
-                <div class="top-header">
-                    <div class="container-fluid">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="images/one.png" alt="global" />
-                            </a>
+<!-- page load-->
+<div class="page-loader">
+    <div class="loader"></div>
+</div>
+<header id="header">
+    <!-- header / start-->
+    <div class="hidden-tablet-landscape-up">
+        <div class="header header-mobile-1">
+            <div class="top-header">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/one-tablet.png" alt="global">
+                        </a>
+                    </div>
+                    <div class="search-widget search-widget-1">
+                        <div class="icon-search">
+                            <i class="icon_search"></i>
                         </div>
-                        <div class="search-widget search-widget-1">
-                            <div class="icon-search">
-                                <i class="icon_search"></i>
-                            </div>
-                            <input class="animated" type="text" placeholder="Search" />
-                        </div>
-                        <button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
+                        <input class="animated" type="text" placeholder="Search" />
+                    </div>
+                    <button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
                             </span>
-                        </button>
+                    </button>
+                </div>
+            </div>
+            <div class="au-navbar-mobile navbar-mobile-1">
+                <ul   class=" navigation au-navbar-menu" role="navigation">
+                        <div class="header-content clearfix"> <a class="logo" href="index.html">global service company</a>
+                            <nav class="navigation" role="navigation">
+                                <ul class="primary-nav">
+                                    <li><a href="#intro">About</a></li>
+                                    <li><a href="#services">services</a></li>
+                                    <li><a href="#works">Works</a></li>
+                                    <li><a href="#teams">Our Team</a></li>
+                                    <li><a href="#testimonials">Notes</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+
+
+
+
+                    <li>
+                        <a href="index-en.html"> English</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Arabic</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <div class="contact-widget contact-widget-1">
+                    <div class="icon-box icon-box-1">
+                        <div class="icon">
+                            <i class="icon_phone"></i>
+                        </div>
+                        <div class="content">
+                            <p>1-800-123-6889</p>
+                            <p>contact@site.com</p>
+                        </div>
+                    </div>
+                    <div class="icon-box icon-box-1">
+                        <div class="icon">
+                            <i class="icon_pin"></i>
+                        </div>
+                        <div class="content">
+                            <p>KUWAIT City – Sharq </p>
+                            <p>Mazaya Tower # 3 - 17th Floor</p>
+                        </div>
+                    </div>
+                    <div class="icon-box icon-box-1">
+                        <div class="icon">
+                            <i class="icon_clock"></i>
+                        </div>
+                        <div class="content">
+                            <p>09:30 am – 06:00 pm</p>
+                            <p>Every Day</p>
+                        </div>
                     </div>
                 </div>
-                <div class="au-navbar-mobile navbar-mobile-1">
-                    <ul class="au-navbar-menu">
-                        <li >
-                            <a href="index-en.html">Home</a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-tablet-landscape">
+        <div class="topbar topbar-1 bg-black">
+            <div class="container">
+                <div class="block-left">
+                    <p class="text-block">We are experts in  services and solutions</p>
+                </div>
+                <div class="block-right">
+                    <div class="chosen-lang m-r-25">
+                        <select class="chosen-select" onchange="javascript:handleSelect(this)">
+                            <option value="index-en" selected="">English</option>
+                            <option value="index" >Arabic</option>
+                        </select>
+                    </div>
+                    <ul class="horizontal-list">
+                        <li class="social-item-1">
+                            <a class="fa fa-facebook"></a>
                         </li>
-                        <li>
-                            <a href="about-en.html">Who we are</a>
+                        <li class="social-item-1">
+                            <a class="fa fa-twitter"></a>
                         </li>
-                        <li >
-                            <a href="services-en.html">Services</a>
-                            <span class="arrow">
-                                <i></i>
-                            </span>
-
-
+                        <li class="social-item-1">
+                            <a class="fa fa-google-plus"></a>
                         </li>
-
-                        <li>
-                            <a href="about-en.html">English</a>
+                        <li class="social-item-1">
+                            <a class="fa fa-linkedin"></a>
                         </li>
-                        <li>
-                            <a href="about.html">Arabic</a>
+                        <li class="social-item-1">
+                            <a class="fa fa-instagram"></a>
                         </li>
-
                     </ul>
                 </div>
-                <div class="container-fluid">
+            </div>
+        </div>
+        <div class="header header-1">
+            <div class="container">
+                <div class="block-left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/one.png" alt="global" />
+                        </a>
+                    </div>
+                </div>
+                <div class="block-right">
                     <div class="contact-widget contact-widget-1">
                         <div class="icon-box icon-box-1">
                             <div class="icon">
@@ -134,682 +213,672 @@
                 </div>
             </div>
         </div>
-        <div class="hidden-tablet-landscape">
-            <div class="topbar topbar-1 bg-black">
-                <div class="container">
-                    <div class="block-left">
-                        <p class="text-block">We are experts in  services and solutions</p>
-                    </div>
-                    <div class="block-right">
-                        <div class="chosen-lang m-r-25">
-                            <select class="chosen-select" onchange="javascript:handleSelect(this)">
-                                <option value="about-en" selected="">English</option>
-                                <option value="about" >Arabic</option>
-                            </select>
-                        </div>
-                        <ul class="horizontal-list">
-                            <li class="social-item-1">
-                                <a class="fa fa-facebook"></a>
+    </div>
+    <div class="section section-navbar-1 bg-grey hidden-tablet-landscape" id="js-navbar-fixed">
+        <div class="container">
+            <div class="block-left">
+                <div class="logo-mobile">
+                    <a href="index.html">
+                        <img src="images/one-tablet.png" alt="global">
+                    </a>
+                </div>
+                <nav>
+                    <div class="au-navbar navbar-1">
+                        <ul class="au-navbar-menu">
+                            <li >
+                                <a href="index-en.html">Home</a>
                             </li>
-                            <li class="social-item-1">
-                                <a class="fa fa-twitter"></a>
+                            <li>
+                                <a href="#about">About Us</a>
                             </li>
-                            <li class="social-item-1">
-                                <a class="fa fa-google-plus"></a>
+                            <li >
+                                <a href="#serv">Services</a>
                             </li>
-                            <li class="social-item-1">
-                                <a class="fa fa-linkedin"></a>
-                            </li>
-                            <li class="social-item-1">
-                                <a class="fa fa-instagram"></a>
+                            <li >
+                                <a href="#con">Contact</a>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </nav>
             </div>
-            <div class="header header-1">
-                <div class="container">
-                    <div class="block-left">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="images/one.png" alt="global" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="block-right">
-                        <div class="contact-widget contact-widget-1">
-                            <div class="icon-box icon-box-1">
-                                <div class="icon">
-                                    <i class="icon_phone"></i>
-                                </div>
-                                <div class="content">
-                                    <p>1-800-123-6889</p>
-                                    <p>contact@site.com</p>
-                                </div>
-                            </div>
-                            <div class="icon-box icon-box-1">
-                                <div class="icon">
-                                    <i class="icon_pin"></i>
-                                </div>
-                                <div class="content">
-                                    <p>KUWAIT City – Sharq </p>
-                                    <p>Mazaya Tower # 3 - 17th Floor</p>
-                                </div>
-                            </div>
-                            <div class="icon-box icon-box-1">
-                                <div class="icon">
-                                    <i class="icon_clock"></i>
-                                </div>
-                                <div class="content">
-                                    <p>09:30 am – 06:00 pm</p>
-                                    <p>Every Day</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section section-navbar-1 bg-grey hidden-tablet-landscape" id="js-navbar-fixed">
-            <div class="container">
-                <div class="block-left">
-                    <div class="logo-mobile">
-                        <a href="index.html">
-                            <img src="images/one-tablet.png" alt="global">
-                        </a>
-                    </div>
-                    <nav>
-                        <div class="au-navbar navbar-1">
-                            <ul class="au-navbar-menu">
-                                <li >
-                                    <a href="index-en.html">Home</a>
-
-                                </li>
-                                <li>
-                                    <a href="about-en.html">Who we are</a>
-                                </li>
-                                <li >
-                                    <a href="services-en.html">Services</a>
-
-                                        </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="block-right">
-                    <div class="search-widget search-widget-1">
-                        <div class="icon-search">
-                            <i class="icon_search"></i>
-                        </div>
-                        <input class="animated" type="text" placeholder="Search" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- header / end-->
-    </header>
-    <!-- heading page / start-->
-
-    <!-- heading page / end-->
-    <!-- WE ARE HELP YOU TO GROW YOUR BUSINESS / start-->
-    <section class="section bg-white about-section-2 p-t-70">
-        <div class="container">
-            <div class="heading-section heading-section-2 dark">
-                <h3>ABOUT US</h3>
-            </div>
-            <p class="accordion-title text-block text-center relative p-l-50 p-r-50 m-b-40" style=" font-size: large;  margin-bottom: 180px ; ">
-                Global Services Company is a Kuwaiti based firm delivering services such as, Business Setup, Human Resources and Administration Services, in order for our clients to get the documents cleared according to the Kuwait governmental laws, rules and regulations.
-                Our team has a comprehensive knowledge of the Kuwaiti business market and has the ability to analyze and identify the client's requirements to insure that they are adequately complying with the Ministry of Commerce & Industry Commercial laws and regulations as well as the Private Sector Labor Law.
-<br>
-
-
-            </p>
-            <!--<div class="row">-->
-                <!--<div class="col-lg-6 col-lg-push-3 col-md-8 col-md-push-2 col-sm-12">-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-sm-4">-->
-                            <!--<div class="number-box dark">-->
-                                <!--<span class="number counterUp">10</span>-->
-                                <!--<span class="title">Years of experience</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-sm-4">-->
-                            <!--<div class="number-box dark">-->
-                                <!--<span class="number">-->
-                                    <!--<span class="counterUp">95</span>-->
-                                    <!--<span class="sub">k</span>-->
-                                <!--</span>-->
-                                <!--<span class="title">Happy Customers</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-sm-4">-->
-                            <!--<div class="number-box dark">-->
-                                <!--<span class="number">-->
-                                    <!--<span class="counterUp">100</span>-->
-                                    <!--<span class="sub">%</span>-->
-                                <!--</span>-->
-                                <!--<span class="title">Satisfaction</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
+            <!--<div class="block-right">-->
+                <!--<div class="search-widget search-widget-1">-->
+                    <!--<div class="icon-search">-->
+                        <!--<i class="icon_search"></i>-->
                     <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="video-about-section m-l-50 m-r-50 m-t-30">-->
-                <!--<div class="plyr-video plyr-video-2">-->
-                    <!--<div class="js-video video" data-type="vimeo" data-video-id="176916362"></div>-->
+                    <!--&lt;!&ndash;<input class="animated" type="text" placeholder="Search" />&ndash;&gt;-->
                 <!--</div>-->
             <!--</div>-->
         </div>
-    </section>
-    <!-- WE ARE HELP YOU TO GROW YOUR BUSINESS / end-->
-    <!-- VISION & VALUES / start-->
-    <!--<section class="section bg-grey-light p-t-190 p-b-40">-->
-        <!--<div class="container">-->
-            <!--<div class="heading-section heading-section-2 dark">-->
-                <!--<h3>VISION &amp; VALUES</h3>-->
-            <!--</div>-->
-            <!--<div class="p-b-10"></div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-md-3 col-sm-6">-->
-                    <!--<div class="icon-box icon-box-2">-->
-                        <!--<div class="icon">-->
-                            <!--<i class="fa fa-line-chart"></i>-->
-                        <!--</div>-->
-                        <!--<div class="title">-->
-                            <!--<h3>Advanced Analytics</h3>-->
-                        <!--</div>-->
-                        <!--<div class="content">-->
-                            <!--<p>Quisque pulvinar libero dolor, quis bibendum eros euismod sit amet. Proin dapibus id diam at</p>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-md-3 col-sm-6">-->
-                    <!--<div class="icon-box icon-box-2">-->
-                        <!--<div class="icon">-->
-                            <!--<i class="fa fa-rocket"></i>-->
-                        <!--</div>-->
-                        <!--<div class="title">-->
-                            <!--<h3>Thought Leadership</h3>-->
-                        <!--</div>-->
-                        <!--<div class="content">-->
-                            <!--<p>Pellentesque non diam euismod metus vehicula varius. Donec et velit placerat arcu lobortis.</p>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-md-3 col-sm-6">-->
-                    <!--<div class="icon-box icon-box-2">-->
-                        <!--<div class="icon">-->
-                            <!--<i class="fa fa-black-tie"></i>-->
-                        <!--</div>-->
-                        <!--<div class="title">-->
-                            <!--<h3>Growth Strategy</h3>-->
-                        <!--</div>-->
-                        <!--<div class="content">-->
-                            <!--<p>Gravida at convallis a, tempor sed magna. Pellentesque non diam euismod metus vehicula</p>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-md-3 col-sm-6">-->
-                    <!--<div class="icon-box icon-box-2">-->
-                        <!--<div class="icon">-->
-                            <!--<i class="fa fa-money"></i>-->
-                        <!--</div>-->
-                        <!--<div class="title">-->
-                            <!--<h3>Savings Time &amp; Money</h3>-->
-                        <!--</div>-->
-                        <!--<div class="content">-->
-                            <!--<p>Pellentesque non diam euismod metus vehicula varius. Donec et velit placerat fermentum</p>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
+    </div>
+    <!-- header / end-->
+</header>
+<section>
+    <!-- START REVOLUTION SLIDER 5.0-->
+    <div class="slider-1">
+        <div class="rev_slider" id="js-slider" style="display:none;">
+            <ul>
+
+                <li class="item-1" data-transition="fade">
+                    <!-- MAIN IMAGE-->
+                    <img class="rev-slidebg" src="images/kuw.jpg" alt="#" />
+                    <h3 style="" class="tp-caption tp-resizeme caption-1" data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:900,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]"
+                        data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['middle']" data-voffset="['-180']" data-width="['770', '770', '770', '480']"> The way of doing HR yourself, LIFTED</h3>
+                    <div class=" tp-caption tp-resizeme caption-2 man" data-frames="[{&quot;delay&quot;:1000,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                         data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['30', '0', '0', '40']" data-width="['770', '770', '770', '480']">
+                        We are specialized in Administrative & Human Resources (HR); including all other legal requirements in an effective and efficient manner in order to ensure that you are fully compliant with private sector labor law                    </div>
+
+                    <div class="tp-caption tp-resizeme caption-3" data-frames="[{&quot;delay&quot;:2000,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                         data-responsive="on" data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['180', '150', '150', '250']" data-width="['770', '770', '770', '480']">
+                        <a class="au-btn au-btn-primary m-r-5" href="#serv">Our Services</a>
+
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- section / start-->
+<section  id="about" class="section bg-white about-section-2 p-t-70">
+    <div class="container">
+        <div class="heading-section heading-section-2 dark">
+            <h3>ABOUT US</h3>
+        </div>
+        <p class="accordion-title text-block text-center relative p-l-50 p-r-50 m-b-40" style=" font-size: large;  margin-bottom: 180px ; ">
+            Global Services Company is a Kuwaiti based firm delivering services such as, Business Setup, Human Resources and Administration Services, in order for our clients to get the documents cleared according to the Kuwait governmental laws, rules and regulations.
+            Our team has a comprehensive knowledge of the Kuwaiti business market and has the ability to analyze and identify the client's requirements to insure that they are adequately complying with the Ministry of Commerce & Industry Commercial laws and regulations as well as the Private Sector Labor Law.
+            <br>
+
+
+        </p>
+        <!--<div class="row">-->
+        <!--<div class="col-lg-6 col-lg-push-3 col-md-8 col-md-push-2 col-sm-12">-->
+        <!--<div class="row">-->
+        <!--<div class="col-sm-4">-->
+        <!--<div class="number-box dark">-->
+        <!--<span class="number counterUp">10</span>-->
+        <!--<span class="title">Years of experience</span>-->
         <!--</div>-->
-    <!--</section>-->
-    <!-- VISION & VALUES / end-->
-    <!-- HOW WE WORK WITH YOUR / start-->
-    <div class="section section-split bg-black">
-        <div class="section-split-left bg-cover matchHeigh" style="background: url(&quot;images/who-are-we.png&quot;) center center no-repeat;"></div>
-        <div class="section-split-right matchHeigh">
-            <div class="we-work-section">
-                <div class="heading-section heading-section-1 light">
-                    <h3> The way of doing HR yourself, LIFTED</h3>
+        <!--</div>-->
+        <!--<div class="col-sm-4">-->
+        <!--<div class="number-box dark">-->
+        <!--<span class="number">-->
+        <!--<span class="counterUp">95</span>-->
+        <!--<span class="sub">k</span>-->
+        <!--</span>-->
+        <!--<span class="title">Happy Customers</span>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="col-sm-4">-->
+        <!--<div class="number-box dark">-->
+        <!--<span class="number">-->
+        <!--<span class="counterUp">100</span>-->
+        <!--<span class="sub">%</span>-->
+        <!--</span>-->
+        <!--<span class="title">Satisfaction</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="video-about-section m-l-50 m-r-50 m-t-30">-->
+        <!--<div class="plyr-video plyr-video-2">-->
+        <!--<div class="js-video video" data-type="vimeo" data-video-id="176916362"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</section>
+<div style="margin-bottom: 120px"  class="section bg-white p-t-70 p-b-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="icon-box icon-box-2">
+                    <div class="icon">
+                        <i class="fa fa-check-circle-o"></i>
+                    </div>
+                    <div class="title">
+                        <h3>GUARANTEE</h3>
+                    </div>
+                    <div class="content">
+                        <p>99% accurate, on time, and Hassle free transaction following services in Abu kuwait. Also, Proven for 100% customer satisfaction</p>
+                    </div>
                 </div>
-                <div class="accordion-box accordion-box-1 accordion-box-2" data-accordion-group>
-                    <div class="accordion open m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>Who are we ?</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-                                    We are specialized in Administrative & Human Resources (HR); including all other legal requirements in an effective and efficient manner in order to ensure that you are fully compliant with private sector labor law.
-                                </p>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="icon-box icon-box-2">
+                    <div class="icon">
+                        <i class="fa fa-handshake-o"></i>
                     </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>Vision and mission</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-                                    To serve our clients in an effective & efficient manner by delivering our services to them and insure that we comply with Kuwait governmental laws, rules and regulations.
-
-                                </p>
-                            </div>
-                        </div>
+                    <div class="title">
+                        <h3>COMMITMENT</h3>
                     </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>Company Profile</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-                                    Global Services Company is a Kuwaiti based firm delivering services such as, Business Setup, Human Resources and Administration Services, in order for our clients to get the documents cleared according to the Kuwait governmental laws, rules and regulations.
-                                    Our team has a comprehensive knowledge of the Kuwaiti business market, and has the ability to analyze and identify the client's requirements to insure that they are adequately complying with the Ministry of Commerce & Industry Commercial laws and regulations as well as the Private Sector Labor Law.
-
-                                </p>
-                            </div>
-                        </div>
+                    <div class="content">
+                        <p>Our understanding of your business needs and strong commitment to providing excellent quality set us apart from other companies.</p>
                     </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>What drives us ?</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-                                    We highly emphasis the importance of delivering high quality services to insure the clients cost and time efficiency for their business in a professional manner.
-                                </p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="icon-box icon-box-2">
+                    <div class="icon">
+                        <i class="fa fa-thumbs-o-up"></i>
                     </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>
-                                Competitive advantage
-                            </p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-
-                                    Global Services Company is a group of skilled personnel specialized in delivering a variety of services to companies/individuals, our team will by offering their expertise and experience. Therefore the client shall not need to assign a special team to follow-up on his/hers employees or company’s Human Resources and Administrative services at the governmental institutions.
-
-                                </p>
-                            </div>
-                        </div>
+                    <div class="title">
+                        <h3>ACCURACY</h3>
                     </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>
-                                Our Customers
-                            </p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-
-                                    We offer services to small-medium companies newly established or already operating; we are targeting such firms that need to outsource the Human Resources and Administrative assignments for the purpose of reducing their cost and liabilities.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="content">
+                        <p>Our team adheres 100% accuracy in our services. With global, we ensure you never have to worry about the accuracy of your document.</p>
                     </div>
-
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="icon-box icon-box-2">
+                    <div class="icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <div class="title">
+                        <h3>SPEED</h3>
+                    </div>
+                    <div class="content">
+                        <p>We deliver fast, accurate translation following services in kuwait in various sectors. We act as your go to Typing center in kuwait</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- HOW WE WORK WITH YOUR / end-->
-    <!-- MEET OUR TEAM / start-->
-    <!--<section class="section p-t-70 p-b-35 bg-white">-->
-        <!--<div class="container">-->
-            <!--<div class="p-b-10">-->
-                <!--<div class="heading-section heading-section-2 dark">-->
-                    <!--<h3>MEET OUR TEAM</h3>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-md-4">-->
-                    <!--<div class="image-card image-card-6">-->
-                        <!--<div class="image">-->
-                            <!--<img src="images/team-member-01.jpg" alt="Peter Hart" />-->
-                        <!--</div>-->
-                        <!--<h3 class="name">-->
-                            <!--<a href="about-teammember.html">Peter Hart</a>-->
-                        <!--</h3>-->
-                        <!--<div class="job-title">-->
-                            <!--<span>Chief Executive Officer</span>-->
-                        <!--</div>-->
-                        <!--<div class="content">-->
-                            <!--<p>Suspendisse venenatis ex nec aliquet semper. Pellentesque rutrum rutrum augue. Cras efficitur accumsan vehicula. Quisque at dui lectus.</p>-->
-                        <!--</div>-->
-                        <!--<ul class="socials">-->
-                            <!--<li>-->
-                                <!--<a class="fa fa-facebook-square"></a>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<a class="fa fa-twitter"></a>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<a class="fa fa-linkedin-square"></a>-->
-                            <!--</li>-->
-                        <!--</ul>-->
-                        <!--<div class="phone">-->
-                            <!--<span>(+1) 96 800 888</span>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-md-4">-->
-                    <!--<div class="image-card image-card-6">-->
-                        <!--<div class="image">-->
-                            <!--<img src="images/team-member-02.jpg" alt="Rose Lewis" />-->
-                        <!--</div>-->
-                        <!--<h3 class="name">-->
-                            <!--<a href="about-teammember.html">Rose Lewis</a>-->
-                        <!--</h3>-->
-                        <!--<div class="job-title">-->
-                            <!--<span>Chief Marketing Officer</span>-->
-                        <!--</div>-->
-                        <!--<div class="content">-->
-                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet ante nec ex pellentesque tristique sit amet non nulla</p>-->
-                        <!--</div>-->
-                        <!--<ul class="socials">-->
-                            <!--<li>-->
-                                <!--<a class="fa fa-facebook-square"></a>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<a class="fa fa-twitter"></a>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<a class="fa fa-linkedin-square"></a>-->
-                            <!--</li>-->
-                        <!--</ul>-->
-                        <!--<div class="phone">-->
-                            <!--<span>(+1) 96 800 568</span>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-md-4">-->
-                    <!--<div class="image-card image-card-6">-->
-                        <!--<div class="image">-->
-                            <!--<img src="images/team-member-03.jpg" alt="Kevin Gardner" />-->
-                        <!--</div>-->
-                        <!--<h3 class="name">-->
-                            <!--<a href="about-teammember.html">Kevin Gardner</a>-->
-                        <!--</h3>-->
-                        <!--<div class="job-title">-->
-                            <!--<span>Chief Financial Officer</span>-->
-                        <!--</div>-->
-                        <!--<div class="content">-->
-                            <!--<p>Duis pharetra lectus quis odio commodo molestie. Proin ullamcorper semper aliquam. Proin eleifend nunc quis facilisis egestas nec tristique</p>-->
-                        <!--</div>-->
-                        <!--<ul class="socials">-->
-                            <!--<li>-->
-                                <!--<a class="fa fa-facebook-square"></a>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<a class="fa fa-twitter"></a>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<a class="fa fa-linkedin-square"></a>-->
-                            <!--</li>-->
-                        <!--</ul>-->
-                        <!--<div class="phone">-->
-                            <!--<span>(+1) 96 800 179</span>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section>-->
-    <!-- MEET OUR TEAM / end-->
-    <!-- TESTIMONIALS / start-->
-    <!--<section class="section bg-parallax bg-cover p-t-70 p-b-60" style="background: url(&quot;images/testimonials.png&quot;) center center no-repeat;" data-paroller-type="background" data-paroller-factor="-0.3" data-paroller-direction="vertical">-->
-        <!--<div class="bg-overlay dark"></div>-->
-        <!--<div class="container">-->
-            <!--<div class="relative">-->
-                <!--<div class="heading-section heading-section-2 light bar-white">-->
-                    <!--<h3>TESTIMONIALS</h3>-->
-                <!--</div>-->
-                <!--<div class="owl-carousel dark nav-style-2 p-t-30" data-carousel-margin="30" data-carousel-nav="true" data-carousel-loop="true" data-carousel-items="1" data-carousel-sm="1" data-carousel-xs="1" data-carousel-lg="1" data-carousel-md="1" data-carousel-autoplay="true">-->
-                    <!--<div class="image-card image-card-5 light center">-->
-                        <!--<div class="card-body">-->
-                            <!--<p class="content">We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sapien augue, dictum et gravida et, viverra et est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue ut nulla vitae rutrum. Ut molestie-->
-                                <!--cursus placerat. Aenean posuere consequat arcu.</p>-->
-                        <!--</div>-->
-                        <!--<div class="card-bot">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-01.jpg" alt="Ann Gilbert" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">Ann Gilbert</span>-->
-                                <!--<span class="job-title">Chief Executive Officer, Envato</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="image-card image-card-5 light center">-->
-                        <!--<div class="card-body">-->
-                            <!--<p class="content">Quisque at dapibus turpis, in maximus nulla. Curabitur sagittis, leo in rhoncus placerat, dolor enim pretium massa, vitae suscipit purus. We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sapien augue, dictum-->
-                                <!--et gravida et, viverra et est.</p>-->
-                        <!--</div>-->
-                        <!--<div class="card-bot">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-02.jpg" alt="Kevin Cater" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">Kevin Cater</span>-->
-                                <!--<span class="job-title">Chief Marketing Officer, Envato</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="image-card image-card-5 light center">-->
-                        <!--<div class="card-body">-->
-                            <!--<p class="content">Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum. We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sapien augue, dictum-->
-                                <!--et gravida et, viverra et est.</p>-->
-                        <!--</div>-->
-                        <!--<div class="card-bot">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-03.jpg" alt="Jacob Graham" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">Jacob Graham</span>-->
-                                <!--<span class="job-title">Chief Executive Officer, Envato</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section>-->
-    <!-- TESTIMONIALS / end-->
-    <!-- OUR PARTNER / start-->
-    <section class="section bg-grey-light p-t-70 p-b-70">
-        <div class="container">
-            <div class="relative">
-                <div class="p-b-15">
-                    <div class="heading-section heading-section-2 dark">
-                        <h3>OUR PARTNER</h3>
+</div>
+<div style="#" class="section section-split bg-black">
+    <div class="section-split-left bg-cover matchHeigh" style="background: url(&quot;images/who-are-we.png&quot;) center center no-repeat;"></div>
+    <div class="section-split-right matchHeigh">
+        <div class="we-work-section">
+            <div class="heading-section heading-section-1 light">
+                <h3> The way of doing HR yourself, LIFTED</h3>
+            </div>
+            <div class="accordion-box accordion-box-1 accordion-box-2" data-accordion-group>
+                <div class="accordion open m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>Who are we ?</p>
                     </div>
-                </div>
-                <div class="owl-carousel dark nav-style-2" data-carousel-margin="30" data-carousel-nav="true" data-carousel-loop="true" data-carousel-items="5" data-carousel-autoplay="true">
-                    <div class="icon-box icon-box-3">
-                        <div class="icon">
-                            <a href="about-partnerships.html">
-                                <img src="images/partner-01.png" alt="our partner" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="icon-box icon-box-3">
-                        <div class="icon">
-                            <a href="about-partnerships.html">
-                                <img src="images/partner-02.png" alt="our partner" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="icon-box icon-box-3">
-                        <div class="icon">
-                            <a href="about-partnerships.html">
-                                <img src="images/partner-03.png" alt="our partner" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="icon-box icon-box-3">
-                        <div class="icon">
-                            <a href="about-partnerships.html">
-                                <img src="images/partner-04.png" alt="our partner" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="icon-box icon-box-3">
-                        <div class="icon">
-                            <a href="about-partnerships.html">
-                                <img src="images/partner-05.png" alt="our partner" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="icon-box icon-box-3">
-                        <div class="icon">
-                            <a href="about-partnerships.html">
-                                <img src="images/partner-06.png" alt="our partner" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="icon-box icon-box-3">
-                        <div class="icon">
-                            <a href="about-partnerships.html">
-                                <img src="images/partner-07.png" alt="our partner" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="icon-box icon-box-3">
-                        <div class="icon">
-                            <a href="about-partnerships.html">
-                                <img src="images/partner-08.png" alt="our partner" />
-                            </a>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+                                We are specialized in Administrative & Human Resources (HR); including all other legal requirements in an effective and efficient manner in order to ensure that you are fully compliant with private sector labor law.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="accordion m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>Vision and mission</p>
+                    </div>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+                                To serve our clients in an effective & efficient manner by delivering our services to them and insure that we comply with Kuwait governmental laws, rules and regulations.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>Company Profile</p>
+                    </div>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+                                Global Services Company is a Kuwaiti based firm delivering services such as, Business Setup, Human Resources and Administration Services, in order for our clients to get the documents cleared according to the Kuwait governmental laws, rules and regulations.
+                                Our team has a comprehensive knowledge of the Kuwaiti business market, and has the ability to analyze and identify the client's requirements to insure that they are adequately complying with the Ministry of Commerce & Industry Commercial laws and regulations as well as the Private Sector Labor Law.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>What drives us ?</p>
+                    </div>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+                                We highly emphasis the importance of delivering high quality services to insure the clients cost and time efficiency for their business in a professional manner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>
+                            Competitive advantage
+                        </p>
+                    </div>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+
+                                Global Services Company is a group of skilled personnel specialized in delivering a variety of services to companies/individuals, our team will by offering their expertise and experience. Therefore the client shall not need to assign a special team to follow-up on his/hers employees or company’s Human Resources and Administrative services at the governmental institutions.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>
+                            Our Customers
+                        </p>
+                    </div>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+
+                                We offer services to small-medium companies newly established or already operating; we are targeting such firms that need to outsource the Human Resources and Administrative assignments for the purpose of reducing their cost and liabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
-    <!-- OUR PARTNER / end-->
-
-    <footer id="footer">
-        <!-- Footer / start-->
-        <div class="footer footer-1 bg-black">
-            <div class="top-footer p-t-50 p-b-50">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="footer-block-1">
-                                <div class="logo">
-                                    <img src="images/one.png" alt="global" />
+    </div>
+</div>
+<!-- section / end-->
+<!-- Our Services / start-->
+<section id="serv"  style="background: white" class="section bg-primary p-t-70 p-b-40">
+    <div class="container">
+        <div style="background: white" class="relative">
+            <div class="heading-section heading-section-2 dark">
+                <h3 >Our Services</h3>
+            </div>
+            <div class="ser">
+                <h2  class="text-center">
+                    <!--<span class=" select " data-class="services"> HR outsourcing </span>  -->
+                    <!--<span data-class="admin">Administration </span> </h2>-->
+                <form style="color: #0b0b0b" class="services">
+                    <div class="section bg-white p-t-70 p-b-40">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="icon-box icon-box-6">
+                                        <div class="icon">
+                                                <img src="images/icons/Payroll_3_copy-512.png" alt="Business Services Consulting" />
+                                        </div>
+                                        <h3 class="title">
+                                                Payroll services
+                                        </h3>
+                                        <p class="content"></p>
+                                    </div>
                                 </div>
-                                <div class="quick-link">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Business Consulting</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Investments Management</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Taxes Planning</a>
-                                                </li>
-                                            </ul>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="icon-box icon-box-6">
+                                        <div class="icon">
+                                                <img src="images/icons/Identification.jpg" alt="Industrial Goods &amp; Services" />
                                         </div>
-                                        <div class="col-md-6 col-sm-6">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Insurance Consulting</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Retirement Strategies</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Business Loan</a>
-                                                </li>
-                                            </ul>
+                                        <h3 class="title">
+                                                Civil ID , License Issuance and Renewal
+                                        </h3>
+                                        <p class="content"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="icon-box icon-box-6">
+                                        <div class="icon">
+                                                <img src="images/icons/icon-professional-training.png" alt="Performance Improvement" />
                                         </div>
+                                        <h3 class="title">
+                                                HR Services
+                                        </h3>
+                                        <p class="content"></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="footer-block-2">
-                                <div class="title">
-                                    <h3>Contact information & Feedback form</h3>
+                    </div>
+                    <div class="section bg-white p-t-70 p-b-40">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="icon-box icon-box-6">
+                                        <div class="icon">
+                                            <img src="images/icons/airport.png" alt="Infomation Technology Consulting" />
+                                        </div>
+                                        <h3 class="title">
+                                            Immigration and Passport Services
+                                        </h3>
+                                        <p class="content"></p>
+                                    </div>
                                 </div>
-                                <div class="contact-list">
-                                    <ul>
-                                        <li>KUWAIT City – Sharq – Mazaya Tower # 3 – 17th Floor</li>
-                                        <li>P.O.Box 42142 – Shuwaikh 70652 - Kuwait</li>
-                                    </ul>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="icon-box icon-box-6">
+                                        <div class="icon">
+                                            <img src="images/icons/balcao-cinema_318-41778.jpg" alt="Financial Services Consulting" />
+                                        </div>
+                                        <h3 class="title">
+                                            Labor Residency Procedures
+                                        </h3>
+                                        <p class="content"></p>
+                                    </div>
                                 </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-block-3">
-                                <div class="title">
-                                    <h3>Follow us</h3>
-                                </div>
-                                <div class="social-list">
-                                    <ul class="horizontal-list">
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-facebook"></a>
-                                        </li>
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-twitter"></a>
-                                        </li>
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-google-plus"></a>
-                                        </li>
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-linkedin"></a>
-                                        </li>
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-instagram"></a>
-                                        </li>
-                                    </ul>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="icon-box icon-box-6">
+                                        <div class="icon">
+                                            <img src="images/icons/images.png" alt="Customer Strategy &amp; Marketing" />
+                                        </div>
+                                        <h3 class="title">
+                                            Company Establishment and renewal Services
+                                        </h3>
+                                        <p class="content"></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </form>
+                <!--<form style="color: #0b0b0b" class="admin">-->
+                    <!--<div class="section bg-white p-t-70 p-b-40">-->
+                        <!--<div class="container">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-md-4 col-sm-6">-->
+                                    <!--<div class="icon-box icon-box-6">-->
+                                        <!--<div class="icon">-->
+                                            <!--<a href="services-v1.html">-->
+                                                <!--<img src="images/icons/img_383073.png" alt="Business Services Consulting" />-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                        <!--<h3 class="title">-->
+                                            <!--<a href="services-v1.html">-->
+                                                <!--Employee retention-->
+                                            <!--</a>-->
+                                        <!--</h3>-->
+                                        <!--<p class="content"></p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-4 col-sm-6">-->
+                                    <!--<div class="icon-box icon-box-6">-->
+                                        <!--<div class="icon">-->
+                                            <!--<a href="services-v1.html">-->
+                                                <!--<img src="images/icons/balcao-cinema_318-41778.jpg" alt="Industrial Goods &amp; Services" />-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                        <!--<h3 class="title">-->
+                                            <!--<a href="services-v1.html">	Labor residency-->
+                                                <!--procedures-->
+                                            <!--</a>-->
+                                        <!--</h3>-->
+                                        <!--<p class="content"></p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-4 col-sm-6">-->
+                                    <!--<div class="icon-box icon-box-6">-->
+                                        <!--<div class="icon">-->
+                                            <!--<a href="services-v1.html">-->
+                                                <!--<img src="images/icons/Identification.jpg" alt="Performance Improvement" />-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                        <!--<h3 class="title">-->
+                                            <!--<a href="services-v1.html">-->
+                                                <!--Civil ID, License issuance and renewal-->
+
+                                            <!--</a>-->
+                                        <!--</h3>-->
+                                        <!--<p class="content"></p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-4 col-sm-6">-->
+                                    <!--<div class="icon-box icon-box-6">-->
+                                        <!--<div class="icon">-->
+                                            <!--<a href="services-v1.html">-->
+                                                <!--<img src="images/icons/appointment_new_gnome_missed-512.png" alt="Customer Strategy &amp; Marketing" />-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                        <!--<h3 class="title">-->
+                                            <!--<a href="services-v1.html">Medical insurance issuance and renewal-->
+                                            <!--</a>-->
+                                        <!--</h3>-->
+                                        <!--<p class="content"></p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-4 col-sm-6">-->
+                                    <!--<div class="icon-box icon-box-6">-->
+                                        <!--<div class="icon">-->
+                                            <!--<a href="services-v1.html">-->
+                                                <!--<img src="images/icons/images.png" alt="Financial Services Consulting" />-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                        <!--<h3 class="title">-->
+                                            <!--<a href="services-v1.html"> Company establishment and renewal services-->
+                                            <!--</a>-->
+                                        <!--</h3>-->
+                                        <!--<p class="content"></p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-md-4 col-sm-6">-->
+                                    <!--<div class="icon-box icon-box-6">-->
+                                        <!--<div class="icon">-->
+                                            <!--<a href="services-v1.html">-->
+                                                <!--<img src="images/icons/airport.png" alt="Infomation Technology Consulting" />-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                        <!--<h3 class="title">-->
+                                            <!--<a href="services-v1.html"> Immigration and Passport services (labor contracts, renewal and cancellation)-->
+                                            <!--</a>-->
+                                        <!--</h3>-->
+                                        <!--<p class="content"></p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+
+                <!--</form>-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Services / end-->
+<!-- Why Choose Us / start-->
+
+<!-- Why Choose Us / end-->
+<!-- Testimonials / start-->
+
+<!-- Testimonials / end-->
+<!-- section / start-->
+<div  class="section bg-parallax p-t-100 p-b-70 bg-cover" style=" margin-top: 50px; background: url(&quot;images/27077958-kuwait-wallpapers.jpg&quot;) center center no-repeat;" data-paroller-type="background" data-paroller-factor="-0.3" data-paroller-direction="vertical">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <div class="number-box light">
+                    <span class="number counterUp">325</span>
+                    <span class="title">Cases completed</span>
                 </div>
             </div>
-            <div class="bot-footer">
-                <div class="container">
-                    <div class="block-inner p-t-35 p-b-60">
-                        <div class="block-left">
-                            <span> All rights reserved for our company.</span>
-                        </div>
-                        <div class="block-right">
-                            <div class="quick-link">
-                                <ul>
-                                    <li>
-                                        <a href="#">About</a>
-                                    </li>
+            <div class="col-md-3 col-sm-3">
+                <div class="number-box light">
+                    <span class="number counterUp">25</span>
+                    <span class="title">Consultants</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="number-box light">
+                    <span class="number counterUp">12</span>
+                    <span class="title">Awards Winning</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="number-box light">
+                        <span class="number">
+                            <span class="counterUp">100</span>
+                            <span class="sub">%</span>
+                        </span>
+                    <span class="title">Satisfied customers</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- section / end-->
+<!-- section / start-->
+<div id="con" class="section bg-black p-t-80 p-b-80">
+    <div class="container">
+        <p class="text-block text-grey text-med m-b-45 text-center p-l-100 p-r-100">If you need to speak to us about a general query fill in the form below and we will call you back within the same working day.</p>
+        <div class="au-form-group">
 
-                                    <li>
-                                        <a href="#">Term & Conditions</a>
+            <div class="au-form-col-3 p-r-5">
+                <input class="au-input" type="text" placeholder="Your Name: *">
+            </div>
+            <div class="au-form-col-3 p-r-5">
+                <input class="au-input" type="text" placeholder="Phone Number: *">
+            </div>
+            <div class="au-form-col-3 p-r-5">
+                <input class="au-input" type="text" placeholder="How can we help? *">
+            </div>
+            <div class="au-form-col-3">
+                <input class="au-input-submit au-btn au-btn-primary au-btn-large btn-block" type="submit" value="Submit">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- section / end-->
+
+<!-- section / start-->
+<div class="section bg-parallax p-t-120 p-b-120" style="background: url(&quot;images/27077958-kuwait-wallpapers.jpg&quot;) no-repeat;" data-paroller-type="background" data-paroller-factor="-0.3" data-paroller-direction="vertical">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <p class="text-block text-white text-center p-l-100 p-r-100 relative text-lead">
+            Our Clients,
+            We offer services to small-medium companies newly established or already operating; we are targeting such firms that need to outsource the Human Resources and Administrative assignments for the purpose of reducing their cost and liabilities.
+
+        </p>
+    </div>
+</div>
+<!-- section / end-->
+
+<!-- Our Partner / start-->
+<!--<section class="section bg-grey-light p-t-70 p-b-70">-->
+    <!--<div class="container">-->
+        <!--<div class="relative">-->
+            <!--<div class="p-b-15">-->
+                <!--<div class="heading-section heading-section-1 dark">-->
+                    <!--<h3>Our Partner</h3>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="owl-carousel dark nav-style-1" data-carousel-margin="30" data-carousel-nav="true" data-carousel-loop="true" data-carousel-items="5" data-carousel-autoplay="true">-->
+                <!--<div class="icon-box icon-box-3">-->
+                    <!--<div class="icon">-->
+                        <!--<a href="about-partnerships.html">-->
+                            <!--<img src="images/partner-01.png" alt="our partner" />-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="icon-box icon-box-3">-->
+                    <!--<div class="icon">-->
+                        <!--<a href="about-partnerships.html">-->
+                            <!--<img src="images/partner-02.png" alt="our partner" />-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="icon-box icon-box-3">-->
+                    <!--<div class="icon">-->
+                        <!--<a href="about-partnerships.html">-->
+                            <!--<img src="images/partner-03.png" alt="our partner" />-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="icon-box icon-box-3">-->
+                    <!--<div class="icon">-->
+                        <!--<a href="about-partnerships.html">-->
+                            <!--<img src="images/partner-04.png" alt="our partner" />-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<!-- Our Partner / end-->
+<footer id="footer">
+    <!-- Footer / start-->
+    <div class="footer footer-1 bg-black">
+        <div class="top-footer p-t-50 p-b-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-block-1">
+                            <div class="logo">
+                                <img src="images/one.png" alt="global" />
+                            </div>
+                            <div class="quick-link">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Payroll services</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Civil ID , License Issuance and Renewal</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">HR Services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Company Establishment and renewal Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Labor Residency Procedures</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Immigration and Passport Services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-block-2">
+                            <div class="title">
+                                <h3>Contact information & Feedback form</h3>
+                            </div>
+                            <div class="contact-list">
+                                <ul>
+                                    <li>KUWAIT City – Sharq – Mazaya Tower # 3 – 17th Floor</li>
+                                    <li>P.O.Box 42142 – Shuwaikh 70652 - Kuwait</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-block-3">
+                            <div class="title">
+                                <h3>Follow us</h3>
+                            </div>
+                            <div class="social-list">
+                                <ul class="horizontal-list">
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-facebook"></a>
                                     </li>
-                                    <li>
-                                        <a href="#">Privacy Policy</a>
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-twitter"></a>
                                     </li>
-                                    <li>
-                                        <a href="#">Sites Map</a>
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-google-plus"></a>
+                                    </li>
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-linkedin"></a>
+                                    </li>
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-instagram"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -818,39 +887,83 @@
                 </div>
             </div>
         </div>
-        <!-- Footer / end-->
-    </footer>
-    <div id="up-to-top">
-        <i class="fa fa-angle-up"></i>
+        <div class="bot-footer">
+            <div class="container">
+                <div class="block-inner p-t-35 p-b-60">
+                    <div class="block-left">
+                        <span> All rights reserved for company.</span>
+                    </div>
+                    <div class="block-right">
+                        <div class="quick-link">
+                            <ul>
+                                <!--<li>-->
+                                    <!--<a href="#about">About</a>-->
+                                <!--</li>-->
+
+                                <!--<li>-->
+                                    <!--<a href="#">Term & Conditions</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#">Privacy Policy</a>-->
+                                <!--</li>-->
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--
-    Javascripts
-    ==================================================
-    -->
-    <script src="vendor/jquery/dist/jquery.min.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <script src="vendor/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="vendor/headroom/headroom.min.js"></script>
-    <script src="vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
-    <script src="vendor/SmoothScroll/SmoothScroll.js"></script>
-    <script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
-    <script src="vendor/plyr/plyr.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/jquery-accordion/js/jquery.accordion.js"></script>
-    <script src="vendor/chosen/chosen.jquery.js"></script>
-    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
-    <script src="vendor/paroller.js/jquery.paroller.min.js"></script>
-    <script src="vendor/retinajs/dist/retina.min.js"></script>
-    <script src="js/owl-custom.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/switcher-custom.js"></script>
-    <!--
-    End Document
-    ==================================================
-    -->
+    <!-- Footer / end-->
+</footer>
+<div id="up-to-top">
+    <i class="fa fa-angle-up"></i>
+</div>
+<!--
+Javascripts
+==================================================
+-->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<script src="vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="vendor/headroom/headroom.min.js"></script>
+<script src="vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
+<script src="vendor/SmoothScroll/SmoothScroll.js"></script>
+<script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="vendor/plyr/plyr.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="vendor/jquery-accordion/js/jquery.accordion.js"></script>
+<script src="vendor/chosen/chosen.jquery.js"></script>
+<script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
+<script src="vendor/paroller.js/jquery.paroller.min.js"></script>
+<script src="vendor/retinajs/dist/retina.min.js"></script>
+<script src="js/owl-custom.js"></script>
+<script src="js/serve.js"></script>
+<script src="js/main.js"></script>
+<script src="js/momo.js"></script>
+<script src="js/switcher-custom.js"></script>
+<script src="vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!--
+| (Load Extensions only on Local File Systems !
+| The following part can be removed on Server for On Demand Loading)
+-->
+<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="js/revo-slider-custom.js"></script>
+<!--
+End Document
+==================================================
+-->
 </body>
 
 </html>
