@@ -3116,15 +3116,18 @@ input:focus, select:focus, textarea:focus {
 }
 
 .slider-1 .tparrows.tp-leftarrow:before {
+  display: none;
   content: '\f053';
 }
 
 .slider-1 .tparrows.tp-rightarrow {
+  display: none;
   left: auto !important;
   right: 0;
 }
 
 .slider-1 .tparrows.tp-rightarrow:before {
+  display: none;
   content: '\f054';
 }
 
@@ -3165,6 +3168,19 @@ input:focus, select:focus, textarea:focus {
 
 .slider-2 .item-1 .caption-1 {
   font-size: 60px;
+}
+.ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0;
 }
 
 /* #Widget
