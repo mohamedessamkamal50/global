@@ -177,11 +177,11 @@ em {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 200;
 }
 
 small {
-  font-size: 80%;
+  font-size: 20%;
 }
 
 .text-small {
@@ -3095,17 +3095,17 @@ input:focus, select:focus, textarea:focus {
   z-index: 0 !important;
 }
 
-/* .slider-1 .tparrows {
-  width: 40px;
-  height: 90px;
-  -webkit-transform: none !important;
-  -moz-transform: none !important;
-  -ms-transform: none !important;
-  -o-transform: none !important;
-  transform: none !important;
-  margin-top: -45px;
-  background: rgba(0, 0, 0, 0.2);
-} */
+/*.slider-1 .tparrows {*/
+  /*width: 40px;*/
+  /*height: 90px;*/
+  /*-webkit-transform: none !important;*/
+  /*-moz-transform: none !important;*/
+  /*-ms-transform: none !important;*/
+  /*-o-transform: none !important;*/
+  /*transform: none !important;*/
+  /*margin-top: -45px;*/
+  /*background: rgba(0, 0, 0, 0.2);*/
+/*}*/
 
 .slider-1 .tparrows:before {
   font-size: 18px;
@@ -3133,8 +3133,8 @@ input:focus, select:focus, textarea:focus {
 
 .slider-1 .caption-1 {
   line-height: 1;
-  font-size: 50px;
-  font-weight: 900;
+  font-size: 40px;
+  font-weight: 200;
   color: #fff;
   text-transform: none;
   text-align: center !important;
@@ -3172,7 +3172,7 @@ input:focus, select:focus, textarea:focus {
 .ml4 {
   position: relative;
   font-weight: 900;
-  font-size: 4.5em;
+  font-size: 1.5em;
 }
 .ml4 .letters {
   position: absolute;
