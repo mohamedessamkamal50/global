@@ -16,7 +16,7 @@
                 touchdrag : true,
                 pulldrag : true,
                 nav : false,
-                navtext : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+                navtext : ["<i ></i>","<i ></i>"],
                 dots : false,
                 dotsdata : false,
                 autoplay : false,
@@ -84,9 +84,9 @@ var ml4 = {};
 ml4.opacityIn = [0,1];
 ml4.scaleIn = [0.2, 1];
 ml4.scaleOut = 3;
-ml4.durationIn = 800;
-ml4.durationOut = 600;
-ml4.delay = 500;
+ml4.durationIn = 2500;
+ml4.durationOut = 2500;
+ml4.delay = 2500;
 
 anime.timeline({loop: true})
     .add({
@@ -128,8 +128,8 @@ anime.timeline({loop: true})
 }).add({
     targets: '.ml4',
     opacity: 0,
-    duration: 500,
-    delay: 500
+    duration: 2500,
+    delay: 2500
 });
 
 
