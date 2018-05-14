@@ -3095,7 +3095,7 @@ input:focus, select:focus, textarea:focus {
   z-index: 0 !important;
 }
 
-.slider-1 .tparrows {
+/* .slider-1 .tparrows {
   width: 40px;
   height: 90px;
   -webkit-transform: none !important;
@@ -3105,7 +3105,7 @@ input:focus, select:focus, textarea:focus {
   transform: none !important;
   margin-top: -45px;
   background: rgba(0, 0, 0, 0.2);
-}
+} */
 
 .slider-1 .tparrows:before {
   font-size: 18px;
