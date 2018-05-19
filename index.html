@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
-    <!--
-    Basic Page Needs
-    ==================================================
-    -->
+
     <meta charset="UTF-8">
     <title>الصفحة الرئيسية</title>
 
+    <!--
+    Mobile Specific Metas
+    ==================================================
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--
     CSS
@@ -18,24 +19,25 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/elegant-icons/style.css" rel="stylesheet">
     <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="vendor/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="vendor/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="vendor/css-hamburgers/dist/hamburgers.min.css" rel="stylesheet">
     <link href="vendor/chosen/chosen.css" rel="stylesheet">
     <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="vendor/plyr/plyr.min.css" rel="stylesheet">
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-    <link href="vendor/revolution/css/layers.css" rel="stylesheet">
-    <link href="vendor/revolution/css/navigation.css" rel="stylesheet">
-    <link href="vendor/revolution/css/settings.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/switcher.css" rel="stylesheet">
     <link href="css/colors/primary.css" rel="stylesheet" id="colors">
     <link href="css/retina.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slider.css">
     <!--
     Favicons
     ==================================================
     -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="shortcut icon" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
@@ -50,66 +52,138 @@
 </head>
 
 <body>
-    <!-- page load-->
-    <div class="page-loader">
-        <div class="loader"></div>
-    </div>
-    <header>
-        <!-- header / start-->
-        <div class="hidden-tablet-landscape-up">
-            <div class="header header-mobile-1">
-                <div class="top-header">
-                    <div class="container-fluid">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="images/one.png" alt="global" />
-                            </a>
+<!-- page load-->
+<div class="page-loader">
+    <div class="loader"></div>
+</div>
+<header>
+    <!-- header / start-->
+    <div class="hidden-tablet-landscape-up">
+        <div class="header header-mobile-1">
+            <div class="top-header">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/one.png" alt="global" />
+                        </a>
+                    </div>
+                    <div class="search-widget search-widget-1">
+                        <div class="icon-search">
+                            <i class="icon_search"></i>
                         </div>
-                        <div class="search-widget search-widget-1">
-                            <div class="icon-search">
-                                <i class="icon_search"></i>
-                            </div>
-                            <input class="animated" type="text" placeholder="Search" />
-                        </div>
-                        <button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
+                        <input class="animated" type="text" placeholder="Search" />
+                    </div>
+                    <button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
                             </span>
-                        </button>
+                    </button>
+                </div>
+            </div>
+            <div class="au-navbar-mobile navbar-mobile-1">
+                <ul class="au-navbar-menu">
+                    <li class="drop">
+                        <a href="index.html">الصفحة الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="about.html">من نحن</a>
+                    </li>
+                    <li class="drop">
+                        <a href="services.html">الخدمات</a>
+                        <span class="arrow">
+                                <i></i>
+                            </span>
+                    </li>
+
+                    <li>
+                        <a href="about-en.html">English</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <div class="contact-widget contact-widget-1">
+                    <div class="icon-box icon-box-1">
+                        <div class="icon">
+                            <i class="icon_phone"></i>
+                        </div>
+                        <div class="content">
+                            <p>1-800-123-6889</p>
+                            <p>contact@site.com</p>
+                        </div>
+                    </div>
+                    <div class="icon-box icon-box-1">
+                        <div class="icon">
+                            <i class="icon_pin"></i>
+                        </div>
+                        <div class="content">
+                            <p>8th floor, 37St</p>
+                            <p>Nasr city</p>
+                        </div>
+                    </div>
+                    <div class="icon-box icon-box-1">
+                        <div class="icon">
+                            <i class="icon_clock"></i>
+                        </div>
+                        <div class="content">
+                            <p>09:30 am – 06:00 pm</p>
+                            <p>كل يوم </p>
+                        </div>
                     </div>
                 </div>
-                <div class="au-navbar-mobile navbar-mobile-1">
-                    <ul class="au-navbar-menu">
-                        <li>
-                            <a href="index.html">الصفحة الرئيسية</a>ل
-                        </li>
-                        <li>
-                            <a href="#about">من نحن</a>
-                        </li>
-                        <li >
-                            <a href="#services">الخدمات</a>
-                        </li>
-                        <li >
-                            <a href="#con">اتصل بنا</a>
-                        </li>
-
-                        <li>
-                            <a href="index.html">Arabic</a>
-                        </li>
-                        <li>
-                            <a href="index-en.html">English</a>
-                        </li>
-                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-tablet-landscape">
+        <!--<div class="topbar topbar-1 bg-black">-->
+        <!--<div class="container">-->
+        <!--<div class="block-left">-->
+        <!--<p class="text-block">نحن خبراء في تقديم خدمات حكومية</p>-->
+        <!--</div>-->
+        <!--<div class="block-right">-->
+        <!--<div class="chosen-lang m-r-25">-->
+        <!--<select class="chosen-select" onchange="javascript:handleSelect(this)">-->
+        <!--<option value="index-en" >English</option>-->
+        <!--<option value="index" selected="">Arabic</option>-->
+        <!--</select>-->
+        <!--</div>-->
+        <!--<ul class="horizontal-list">-->
+        <!--<li class="social-item-1">-->
+        <!--<a class="fa fa-facebook"></a>-->
+        <!--</li>-->
+        <!--<li class="social-item-1">-->
+        <!--<a class="fa fa-twitter"></a>-->
+        <!--</li>-->
+        <!--<li class="social-item-1">-->
+        <!--<a class="fa fa-google-plus"></a>-->
+        <!--</li>-->
+        <!--<li class="social-item-1">-->
+        <!--<a class="fa fa-linkedin"></a>-->
+        <!--</li>-->
+        <!--<li class="social-item-1">-->
+        <!--<a class="fa fa-instagram"></a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="header header-1">
+            <div class="container">
+                <div class="block-right">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/one.png" alt="global" />
+                        </a>
+                    </div>
                 </div>
-                <div class="container-fluid">
+                <div class="block-left">
                     <div class="contact-widget contact-widget-1">
                         <div class="icon-box icon-box-1">
                             <div class="icon">
                                 <i class="icon_phone"></i>
                             </div>
                             <div class="content">
-                                <p>1-800-123-6889</p>
-                                <p>contact@site.com</p>
+                                <p>22213203 </p>
+                                <p>r.rayya@globalserviceskw.com</p>
                             </div>
                         </div>
                         <div class="icon-box icon-box-1">
@@ -117,1022 +191,645 @@
                                 <i class="icon_pin"></i>
                             </div>
                             <div class="content">
-                                <p>8th floor, 37St</p>
-                                <p>Nasr city</p>
+                                <p> مدينة الكويت - شرق  </p>
+                                <p> ابراج مزايا #3 الطابق 17 </p>
                             </div>
                         </div>
                         <div class="icon-box icon-box-1">
                             <div class="icon">
                                 <i class="icon_clock"></i>
                             </div>
-                            <div class="content">
-                                <p>09:30 am – 06:00 pm</p>
-                                <p>كل يوم </p>
+                            <div  class="content">
+                                <p>08:00 ص – 05:00 م</p>
+                                <p>من السبت الي الخميس</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hidden-tablet-landscape">
-            <div class="topbar topbar-1 bg-black">
-                <div class="container">
-                    <div class="block-left">
-                        <p class="text-block">نحن خبراء في تقديم خدمات حكومية</p>
-                    </div>
-                    <div class="block-right">
-                        <div class="chosen-lang m-r-25">
-                            <h4><a style="color: whitesmoke" href="index-en.html">ENGLISH</a></h4>
-                        </div>
-                        <ul class="horizontal-list">
-                            <li class="social-item-1">
-                                <a class="fa fa-facebook"></a>
+    </div>
+    <div class="section section-navbar-1 bg-grey hidden-tablet-landscape" id="js-navbar-fixed">
+        <div class="container">
+            <div class="block-right">
+                <div class="logo-mobile">
+                    <a href="index.html">
+                        <img src="images/one-tablet.png" alt="global">
+                    </a>
+                </div>
+                <nav>
+                    <div class="  au-navbar navbar-1">
+                        <ul class="au-navbar-menu">
+                            <li>
+                                <a href="#con">اتصل بنا</a>
                             </li>
-                            <li class="social-item-1">
-                                <a class="fa fa-twitter"></a>
+                            <li>
+                                <a href="#services">الخدمات</a>
                             </li>
-                            <li class="social-item-1">
-                                <a class="fa fa-google-plus"></a>
+                            <li>
+                                <a href="#about">من نحن</a>
                             </li>
-                            <li class="social-item-1">
-                                <a class="fa fa-linkedin"></a>
+
+
+                            <li >
+                                <a href="index.html">الصفحة الرئيسية</a>
                             </li>
-                            <li class="social-item-1">
-                                <a class="fa fa-instagram"></a>
-                            </li>
+
                         </ul>
+
                     </div>
-                </div>
+
+                </nav>
             </div>
-            <div class="header header-1">
-                <div class="container">
-                    <div class="block-right">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="images/one-tablet.png" alt="global" />
-                            </a>
-                        </div>
+            <div class="block-left">
+                <div class="search-widget search-widget-1">
+                    <div style="margin-top: 20px" class="  chosen-lang m-r-25">
+                        <h4><a style="color: #0b0b0b" href="index-en.html">English</a></h4>
                     </div>
-                    <div class="block-left">
-                        <div class="contact-widget contact-widget-1">
-                            <div class="icon-box icon-box-1">
-                                <div class="icon">
-                                    <i class="icon_phone"></i>
-                                </div>
-                                <div class="content">
-                                    <p>22213203  </p>
-                                    <p>r.rayya@globalserviceskw.com</p>
-                                </div>
-                            </div>
-                            <div class="icon-box icon-box-1">
-                                <div class="icon">
-                                    <i class="icon_pin"></i>
-                                </div>
-                                <div class="content">
-                                    <p> مدينة الكويت - شرق  </p>
-                                    <p> ابراج مزايا #3 الطابق 17 </p>
-                                </div>
-                            </div>
-                            <div class="icon-box icon-box-1">
-                                <div class="icon">
-                                    <i class="icon_clock"></i>
-                                </div>
-                                <div class="content">
-                                    <p>08:00 م – 05:00 ص</p>
-                                    <p>من السبت الي الخميس</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <input class="animated" type="text" placeholder="Search" />
                 </div>
             </div>
         </div>
-        <div class="section section-navbar-1 bg-grey hidden-tablet-landscape" id="js-navbar-fixed">
-            <div class="container">
-                <div class="block-right">
-                    <div class="logo-mobile">
-                        <a href="index.html">
-                            <img src="images/one-tablet.png" alt="global">
-                        </a>
-                    </div>
-                    <nav>
-                        <div class="au-navbar navbar-1">
-                            <ul class="au-navbar-menu">
-                                <li>
-                                    <a href="#con">اتصل بنا</a>
-                                </li>
-                                <li>
-                                    <a href="#services">الخدمات</a>
-                                </li>
-                                <li>
-                                    <a href="#about">من نحن</a>
-                                </li>
+    </div>
+    <!-- header / end-->
+</header>
 
 
-                                <li >
-                                    <a href="index.html">الصفحة الرئيسية</a>
-                                </li>
+<!-- heading page / start-->
+<div class="heading-page heading-page-1 center bg-cover" style=" height: 600px; background: url(images/kuw.jpg) center center no-repeat;">
+    <div class="container">
+        <h2 style="margin-top: 100px" class="wow fadeInUp animated cd-headline slide ml4 title"> <span class="cd-words-wrapper">
+                                    <b class="is-visible">متخصصون في اجراءات الشئون الادارية و الموارد البشرية</b>
+                                    <b>نحن نقوم عنك بادارة برامج الموارد البشرية</b>
+                                    <b>عمليات الموارد البشرية أصبحت أكثر سهولة </b>
+                                </span></h2>
+    </div>
+    <div style="margin-top: 150px" class="tp-caption tp-resizeme caption-3" data-frames="[{&quot;delay&quot;:2000,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+         data-responsive="on" data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['120', '0', '100', '0']" >
+        <a class="au-btn au-btn-primary m-r-5 t" href="#services">خدماتنا</a>
 
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <!--<div class="block-left">-->
-                    <!--<div class="search-widget search-widget-1">-->
-                        <!--<div class="icon-search">-->
-                            <!--<i class="icon_search"></i>-->
-                        <!--</div>-->
-                        <!--<input class="animated" type="text" placeholder="Search" />-->
-                    <!--</div>-->
-                <!--</div>-->
-            </div>
+    </div>
+</div>
+<!-- heading page / end-->
+<!-- WE ARE HELP YOU TO GROW YOUR BUSINESS / start-->
+<section  id="about"  class="section bg-white about-section-2 p-t-70">
+    <div class="container">
+        <div style="margin-bottom: 100px" class="heading-section heading-section-2 dark">
+            <h3 style="margin-bottom: 50px">معلومات عن الشركة</h3>
+            <p  class="text-block text-center relative p-l-50 p-r-50 m-b-40">
+                شركة جلوبل الخدماتية لتنمية الموارد البشرية، تقدم خدمة متكاملة من قبل مجموعة من الموظفين المتخصصين في تقديم الخدمات للشركات والأفراد، ابتداءا من الإستعانة بمصادر خارجية لإدارة الموارد البشرية إلى إجراءات إدارة الشئون الإدارية، حيث يمكن لموظفينا  الانتهاء من المعاملات الخاصة بكم بطريقة دقيقة وفقا لقواعد دولة الكويت وأنظمتها وبالتالي الحد من الوقت والمال الذي ينفق على اصدار الوثائق ، حيث أن موظفينا المتخصصين لديهم علم ودراية بالإجراءات المتبعة لدى الهيئات الحكومية.  </p>
         </div>
-        <!-- header / end-->
-    </header>
-    <section>
-        <!-- START REVOLUTION SLIDER 5.0-->
-        <div class="slider-1">
-            <div class="rev_slider" id="js-slider" style="display:none;">
-                <ul>
-                    <li class="item-1" data-transition="fade">
-                        <!-- MAIN IMAGE-->
-                        <img class="rev-slidebg" src="images/kuw.jpg" alt="#" />
-                        <h2 style="margin-top: 200px" class="ml4 tp-caption tp-resizeme caption-1" data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:900,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]"
-                            data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['middle']" data-voffset="['-180']" data-width="['770', '770', '770', '480']">  <span class="letters letters-1"> متخصصون في اجراءات الشئون الادارية و الموارد البشرية</span>
-                            <span class="letters letters-2">نحن نقوم عنك بادارة برامج الموارد البشرية</span>
-                            <span class="letters letters-3"> عمليات الموارد البشرية أصبحت أكثر سهولة </span>
+    </div>
+    <div class="tp-caption tp-resizeme caption-3" data-frames="[{&quot;delay&quot;:2000,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+         data-responsive="on" data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['120', '0', '100', '0']" >
+        <a class="au-btn au-btn-primary m-r-5 t" href="#services">خدماتنا</a>
 
-                        </h2>
-                        <div class="tp-caption tp-resizeme caption-2" data-frames="[{&quot;delay&quot;:1000,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+    </div>
+</section>
+<!-- WE ARE HELP YOU TO GROW YOUR BUSINESS / end-->
+<!-- VISION & VALUES / start-->
+<div style="margin-bottom: 120px" class="section bg-white p-t-70 p-b-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="icon-box icon-box-2">
+                    <div class="icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <div class="title">
+                        <h3>السرعة</h3>
+                    </div>
+                    <div class="content">
+                        <p>
 
-                        <div class="tp-caption tp-resizeme caption-3" data-frames="[{&quot;delay&quot;:2000,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
-                        data-responsive="on" data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['120', '0', '100', '0']" >
-                            <a class="au-btn au-btn-primary m-r-5 t" href="#services">خدماتنا</a>
-
-                        </div>
-                    </li>
-                    <!--<li class="item-1" data-transition="fade">-->
-                        <!--&lt;!&ndash; MAIN IMAGE&ndash;&gt;-->
-                        <!--<img class="rev-slidebg" src="images/service-1.png" alt="#" />-->
-                        <!--<h3 class="tp-caption tp-resizeme caption-1" data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:900,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]"-->
-                            <!--data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['middle']" data-voffset="['-100']" >Global</h3>-->
-                        <!--<div class="tp-caption tp-resizeme caption-2" data-frames="[{&quot;delay&quot;:1000,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"-->
-                             <!--data-x="['right']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['20', '0', '0', '0']" data-width="['500', '0', '770', '0']">اسم يعني الريادة في الخدمات</div>-->
-                        <!--<div class="tp-caption tp-resizeme caption-3" data-frames="[{&quot;delay&quot;:2000,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"-->
-                             <!--data-responsive="on" data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['120', '0', '100', '0']" >-->
-                            <!--<a class="au-btn au-btn-primary m-r-5 t" href="#">خدماتنا</a>-->
-                            <!--<a class="au-btn au-btn-white m-l-5" href="#">اتصل بنا</a>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="item-1" data-transition="fade">-->
-                        <!--&lt;!&ndash; MAIN IMAGE&ndash;&gt;-->
-                        <!--<img class="rev-slidebg" src="images/service-1.png" alt="#" />-->
-                        <!--<h3 class="tp-caption tp-resizeme caption-1" data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:900,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]"-->
-                            <!--data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['middle']" data-voffset="['-100']" >Global</h3>-->
-                        <!--<div class="tp-caption tp-resizeme caption-2" data-frames="[{&quot;delay&quot;:1000,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"-->
-                             <!--data-x="['right']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['20', '0', '0', '0']" data-width="['500', '0', '770', '0']">اسم يعني الريادة في الخدمات</div>-->
-                        <!--<div class="tp-caption tp-resizeme caption-3" data-frames="[{&quot;delay&quot;:2000,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"-->
-                             <!--data-responsive="on" data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['120', '0', '100', '0']" >-->
-                            <!--<a class="au-btn au-btn-primary m-r-5 t" href="#">خدماتنا</a>-->
-                            <!--<a class="au-btn au-btn-white m-l-5" href="#">اتصل بنا</a>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section  id="about"  class="section bg-white about-section-2 p-t-70">
-        <div class="container">
-            <div style="margin-bottom: 100px" class="heading-section heading-section-2 dark">
-                <h3 style="margin-bottom: 50px">معلومات عنا</h3>
-                <p class="text-block text-center relative p-l-50 p-r-50 m-b-40">
-                    شركة جلوبل الخدماتية لتنمية الموارد البشرية، تقدم خدمة متكاملة من قبل مجموعة من الموظفين المتخصصين في تقديم الخدمات للشركات والأفراد، ابتداءا من الإستعانة بمصادر خارجية لإدارة الموارد البشرية إلى إجراءات إدارة الشئون الإدارية، حيث يمكن لموظفينا  الانتهاء من المعاملات الخاصة بكم بطريقة دقيقة وفقا لقواعد دولة الكويت وأنظمتها وبالتالي الحد من الوقت والمال الذي ينفق على اصدار الوثائق ، حيث أن موظفينا المتخصصين لديهم علم ودراية بالإجراءات المتبعة لدى الهيئات الحكومية                </p>
+            <div class="col-md-3 col-sm-6">
+                <div class="icon-box icon-box-2">
+                    <div class="icon">
+                        <i class="fa fa-thumbs-o-up"></i>
+                    </div>
+                    <div class="title">
+                        <h3>
+                            الدقة
+                        </h3>
+                    </div>
+                    <div class="content">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
             </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="icon-box icon-box-2">
+                    <div class="icon">
+                        <i class="fa fa-handshake-o"></i>
+                    </div>
+                    <div class="title">
+                        <h3>التزام</h3>
+                    </div>
+                    <div class="content">
+                        <p>
 
-
-        </div>
-    </section>
-    <!-- section / start-->
-    <div style="margin-bottom: 120px" class="section bg-white p-t-70 p-b-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="icon-box icon-box-2">
-                        <div class="icon">
-                            <i class="fa fa-rocket"></i>
-                        </div>
-                        <div class="title">
-                            <h3>السرعة</h3>
-                        </div>
-                        <div class="content">
-                            <p>
-
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="icon-box icon-box-2">
-                        <div class="icon">
-                            <i class="fa fa-thumbs-o-up"></i>
-                        </div>
-                        <div class="title">
-                            <h3>
-                                الدقة
-                            </h3>
-                        </div>
-                        <div class="content">
-                            <p>
-
-                                </p>
-                        </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="icon-box icon-box-2">
+                    <div class="icon">
+                        <i class="fa fa-check-circle-o"></i>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="icon-box icon-box-2">
-                        <div class="icon">
-                            <i class="fa fa-handshake-o"></i>
-                        </div>
-                        <div class="title">
-                            <h3>التزام</h3>
-                        </div>
-                        <div class="content">
-                            <p>
-
-                            </p>
-                        </div>
+                    <div class="title">
+                        <h3>الضمان</h3>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="icon-box icon-box-2">
-                        <div class="icon">
-                            <i class="fa fa-check-circle-o"></i>
-                        </div>
-                        <div class="title">
-                            <h3>الضمان</h3>
-                        </div>
-                        <div class="content">
-                            <p>
+                    <div class="content">
+                        <p>
 
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- section / end-->
-    <div class="section section-split bg-black">
-        <div class="section-split-left bg-cover matchHeigh" style="background: url(&quot;images/who-are-we.png&quot;) center center no-repeat;"></div>
-        <div class="section-split-right matchHeigh">
-            <div class="we-work-section we-work-section-1">
-                <div class="heading-section heading-section-1 light">
-                    <h3 >كيفية العمل معك ؟</h3>
+</div>
+<!-- VISION & VALUES / end-->
+<!-- HOW WE WORK WITH YOUR / start-->
+<div class="section section-split bg-black">
+    <div class="section-split-left bg-cover matchHeigh" style="background: url(&quot;images/who-are-we.png&quot;) center center no-repeat;"></div>
+    <div class="section-split-right matchHeigh">
+        <div class="we-work-section we-work-section-1">
+            <div class="heading-section heading-section-1 light">
+                <h3>كيفية العمل معك ؟</h3>
+            </div>
+            <div class="accordion-box accordion-box-1 accordion-box-2" data-accordion-group>
+                <div class="accordion open m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>عن الشركة</p>
+                    </div>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+
+                                شركة جلوبل الخدماتية تقدم خدمات مثل تأسيس الأعمال، خدمة الإستعانة بمصادر خارجية لإدارة الموارد البشرية وخدمات الشئون الإدارية.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="accordion-box accordion-box-1 accordion-box-2" data-accordion-group>
-                    <div class="accordion open m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>معلومات عنا</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-
-                                    شركة جلوبل الخدمات  هي شركة كويتية مقرها تقديم خدمات مثل إعداد الأعمال ، الموارد البشرية والخدمات الإدارية ، لكي يتمكن عملائنا من الحصول على المستندات المطلوبة بموجب القوانين والقواعد واللوائح الحكومية الكويتية
-                                </p>
-                            </div>
+                <div class="accordion m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>ما الذي يدفعنا</p>
+                    </div>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+                                تهدف شركة جلوبل إلى رفع كفاءة وربحية الشركات عن طريق إمدادها بالخدمات والتطبيقات التي تساعد صانعي القرار في التركيز على  إدارة أعمالهم  والاستعانة بمصادر خارجية  لرفع كفاءة الموظفين بتوفير وقتهم وجهدهم وتحقيق أعلى مستويات الكفاءة.
+                            </p>
                         </div>
                     </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>الرؤية والرسالة</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-                                    خدمة عملائنا بطريقة فعالة وفعالة من خلال تقديم خدماتنا لهم والتأكد من التزامنا بالقوانين واللوائح واللوائح الحكومية الكويتية.
-
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>عن الشركة</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-                                    شركة جلوبل للخدمات  هي شركة كويتية مقرها تقديم خدمات مثل إعداد الأعمال ، الموارد البشرية والخدمات الإدارية ، لكي يتمكن عملائنا من الحصول على المستندات المطلوبة بموجب القوانين والقواعد واللوائح الحكومية الكويتية. فريقنا لديه معرفة شاملة بسوق الأعمال الكويتي ، ولديه القدرة على تحليل وتحديد متطلبات العميل لضمان امتثاله بشكل كاف للقوانين والأنظمة التجارية لوزارة التجارة والصناعة وكذلك قانون العمل في القطاع الخاص.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>ما الذي يدفعنا</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-                                    تهدف شركة جلوبل إلى رفع كفاءة وربحية الشركات عن طريق إمدادها بالخدمات والتطبيقات التي تساعد صانعي القرار في التركيز على  إدارة أعمالهم  والاستعانة بمصادر خارجية  لرفع كفاءة الموظفين بتوفير وقتهم وجهدهم وتحقيق أعلى مستويات الكفاءة.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>ميزة تنافسية</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-                                    <ul>
-                                  <li>    تطوير مستمر لتلبية احتياجات العملاء.</li>
-                                   <li>  نقدم حلولا تتناسب مع إجراءات العمل الخاصة بك.</li>
-                                <li>  خبرتنا الغنية في خدمة عملائنا تتناسب مع مختلف القطاعات.</li>
-                                <li>   رفع مستوى الخدمات المقدمة للمستخدمين لإدارة أعمالهم بكفاءة وفعالية.</li>
-                                <li>  نحرص على المتابعة الدورية </li>
-                            </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion m-b-5" data-accordion>
-                        <div class="accordion-title" data-control>
-                            <p>عملائنا</p>
-                        </div>
-                        <div class="accordion-content animated" data-content>
-                            <div class="content-inner">
-                                <p>
-                                    نقدم خدمات للشركات الصغيرة والمتوسطة، حيث اننا نستهدف هذه الشركات التي تحتاج إلى الاستعانة بمصادر خارجية للأعمال الإدارية لخفض تكلفتها والتزاماتها ، وفي الوقت نفسه الحصول على الخدمة المطلوبة من شركة متخصصة.  </div>
-                        </div>
-                    </div>
-
                 </div>
+                <div class="accordion m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>ميزة تنافسية</p>
+                    </div>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+                                فريقنا لديه معرفة شاملة بسوق الأعمال الكويتي ، ولديه القدرة على تحليل وتحديد متطلبات العميل لضمان تطبيق للقوانين وفقا لأنظمة وزارة التجارة والصناعة وكذلك قانون العمل في القطاع الخاص.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion m-b-5" data-accordion>
+                    <div class="accordion-title" data-control>
+                        <p>عملائنا</p>
+                    </div>
+                    <div class="accordion-content animated" data-content>
+                        <div class="content-inner">
+                            <p>
+                                نقدم خدمات للشركات الصغيرة والمتوسطة، حيث اننا نستهدف هذه الشركات التي تحتاج إلى الاستعانة بمصادر خارجية للأعمال الإدارية لخفض تكلفتها والتزاماتها ، وفي الوقت نفسه الحصول على الخدمة المطلوبة من شركة متخصصة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-    <!-- Our Services / start-->
-    <section id="services"   style="background: white" class="section bg-primary p-t-70 p-b-40">
-        <div  class="container">
-            <div style="background: white" class="relative">
-                <div class="heading-section heading-section-2 dark">
-                    <h3 >خدماتنـــا</h3>
-                </div>
-                <div class="ser">
-                    <h2  class="text-center">
-                        <!--<span class=" select " data-class="services"> HR outsourcing </span>  -->
-                        <!--<span data-class="admin">Administration </span> </h2>-->
-                        <form style="color: #0b0b0b" class="services">
-                            <div class="section bg-white p-t-70 p-b-40">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="icon-box icon-box-6">
-                                                <div class="icon">
-                                                    <img src="images/icons/Payroll_3_copy-512.png" alt="Business Services Consulting" />
-                                                </div>
-                                                <h3 class="title">
-                                                    خدمات الرواتب
-                                                </h3>
-                                                <p class="content"></p>
+</div>
+<!-- HOW WE WORK WITH YOUR / end-->
+<!-- MEET OUR TEAM / start--><section id="services"   style="background: white" class="section bg-primary p-t-70 p-b-40">
+    <div  class="container">
+        <div style="background: white" class="relative">
+            <div class="heading-section heading-section-2 dark">
+                <h3 >خدماتنـــا</h3>
+            </div>
+            <div class="ser">
+                <h2  class="text-center">
+                    <!--<span class=" select " data-class="services"> HR outsourcing </span>  -->
+                    <!--<span data-class="admin">Administration </span> </h2>-->
+                    <form style="color: #0b0b0b" class="services">
+                        <div class="section bg-white p-t-70 p-b-40">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="icon-box icon-box-6">
+                                            <div class="icon">
+                                                <img src="images/icons/Payroll_3_copy-512.png" alt="Business Services Consulting" />
                                             </div>
+                                            <h3 class="title">
+                                                خدمات الرواتب
+                                            </h3>
+                                            <p class="content"></p>
                                         </div>
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="icon-box icon-box-6">
-                                                <div class="icon">
-                                                    <img src="images/icons/Identification.jpg" alt="Industrial Goods &amp; Services" />
-                                                </div>
-                                                <h3 class="title">
-                                                    	اصدار / تجديد البطاقة المدنية ورخص القيادة
-                                                </h3>
-                                                <p class="content"></p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="icon-box icon-box-6">
+                                            <div class="icon">
+                                                <img src="images/icons/Identification.jpg" alt="Industrial Goods &amp; Services" />
                                             </div>
+                                            <h3 class="title">
+                                                اصدار / تجديد البطاقة المدنية ورخص القيادة
+                                            </h3>
+                                            <p class="content"></p>
                                         </div>
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="icon-box icon-box-6">
-                                                <div class="icon">
-                                                    <img src="images/icons/icon-professional-training.png" alt="Performance Improvement" />
-                                                </div>
-                                                <h3 class="title">
-                                                    خدمات الموارد البشرية
-                                                </h3>
-                                                <p class="content"></p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="icon-box icon-box-6">
+                                            <div class="icon">
+                                                <img src="images/icons/icon-professional-training.png" alt="Performance Improvement" />
                                             </div>
+                                            <h3 class="title">
+                                                خدمات الموارد البشرية
+                                            </h3>
+                                            <p class="content"></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="section bg-white p-t-70 p-b-40">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="icon-box icon-box-6">
-                                                <div class="icon">
-                                                    <img src="images/icons/airport.png" alt="Infomation Technology Consulting" />
-                                                </div>
-                                                <h3 class="title">
-                                                    اصدار/ تجديد التأمين الصحي
-                                                </h3>
-                                                <p class="content"></p>
+                        </div>
+                        <div class="section bg-white p-t-70 p-b-40">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="icon-box icon-box-6">
+                                            <div class="icon">
+                                                <img src="images/icons/airport.png" alt="Infomation Technology Consulting" />
                                             </div>
+                                            <h3 class="title">
+                                                اصدار/ تجديد التأمين الصحي
+                                            </h3>
+                                            <p class="content"></p>
                                         </div>
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="icon-box icon-box-6">
-                                                <div class="icon">
-                                                    <img src="images/icons/balcao-cinema_318-41778.jpg" alt="Financial Services Consulting" />
-                                                </div>
-                                                <h3 class="title">
-                                                    	الإجراءات الخاصة بالإقامة
-                                                </h3>
-                                                <p class="content"></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6">
-                                            <div class="icon-box icon-box-6">
-                                                <div class="icon">
-                                                    <img src="images/icons/images.png" alt="Financial Services Consulting" />
-                                                </div>
-                                                <h3 class="title">
-                                                    	تأسيس/ تجديد رخص شركات
-                                                </h3>
-                                                <p class="content"></p>
-                                            </div>
-                                        </div>
-
                                     </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="icon-box icon-box-6">
+                                            <div class="icon">
+                                                <img src="images/icons/balcao-cinema_318-41778.jpg" alt="Financial Services Consulting" />
+                                            </div>
+                                            <h3 class="title">
+                                                الإجراءات الخاصة بالإقامة
+                                            </h3>
+                                            <p class="content"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="icon-box icon-box-6">
+                                            <div class="icon">
+                                                <img src="images/icons/images.png" alt="Financial Services Consulting" />
+                                            </div>
+                                            <h3 class="title">
+                                                تأسيس/ تجديد رخص شركات
+                                            </h3>
+                                            <p class="content"></p>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                        </form>
-                        <!--<form style="color: #0b0b0b" class="admin">-->
-                        <!--<div class="section bg-white p-t-70 p-b-40">-->
-                        <!--<div class="container">-->
-                        <!--<div class="row">-->
-                        <!--<div class="col-md-4 col-sm-6">-->
-                        <!--<div class="icon-box icon-box-6">-->
-                        <!--<div class="icon">-->
-                        <!--<a href="services-v1.html">-->
-                        <!--<img src="images/icons/img_383073.png" alt="Business Services Consulting" />-->
-                        <!--</a>-->
-                        <!--</div>-->
-                        <!--<h3 class="title">-->
-                        <!--<a href="services-v1.html">-->
-                        <!--Employee retention-->
-                        <!--</a>-->
-                        <!--</h3>-->
-                        <!--<p class="content"></p>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-4 col-sm-6">-->
-                        <!--<div class="icon-box icon-box-6">-->
-                        <!--<div class="icon">-->
-                        <!--<a href="services-v1.html">-->
-                        <!--<img src="images/icons/balcao-cinema_318-41778.jpg" alt="Industrial Goods &amp; Services" />-->
-                        <!--</a>-->
-                        <!--</div>-->
-                        <!--<h3 class="title">-->
-                        <!--<a href="services-v1.html">	Labor residency-->
-                        <!--procedures-->
-                        <!--</a>-->
-                        <!--</h3>-->
-                        <!--<p class="content"></p>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-4 col-sm-6">-->
-                        <!--<div class="icon-box icon-box-6">-->
-                        <!--<div class="icon">-->
-                        <!--<a href="services-v1.html">-->
-                        <!--<img src="images/icons/Identification.jpg" alt="Performance Improvement" />-->
-                        <!--</a>-->
-                        <!--</div>-->
-                        <!--<h3 class="title">-->
-                        <!--<a href="services-v1.html">-->
-                        <!--Civil ID, License issuance and renewal-->
+                        </div>
+                    </form>
+                    <!--<form style="color: #0b0b0b" class="admin">-->
+                    <!--<div class="section bg-white p-t-70 p-b-40">-->
+                    <!--<div class="container">-->
+                    <!--<div class="row">-->
+                    <!--<div class="col-md-4 col-sm-6">-->
+                    <!--<div class="icon-box icon-box-6">-->
+                    <!--<div class="icon">-->
+                    <!--<a href="services-v1.html">-->
+                    <!--<img src="images/icons/img_383073.png" alt="Business Services Consulting" />-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--<h3 class="title">-->
+                    <!--<a href="services-v1.html">-->
+                    <!--Employee retention-->
+                    <!--</a>-->
+                    <!--</h3>-->
+                    <!--<p class="content"></p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-6">-->
+                    <!--<div class="icon-box icon-box-6">-->
+                    <!--<div class="icon">-->
+                    <!--<a href="services-v1.html">-->
+                    <!--<img src="images/icons/balcao-cinema_318-41778.jpg" alt="Industrial Goods &amp; Services" />-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--<h3 class="title">-->
+                    <!--<a href="services-v1.html">	Labor residency-->
+                    <!--procedures-->
+                    <!--</a>-->
+                    <!--</h3>-->
+                    <!--<p class="content"></p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-6">-->
+                    <!--<div class="icon-box icon-box-6">-->
+                    <!--<div class="icon">-->
+                    <!--<a href="services-v1.html">-->
+                    <!--<img src="images/icons/Identification.jpg" alt="Performance Improvement" />-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--<h3 class="title">-->
+                    <!--<a href="services-v1.html">-->
+                    <!--Civil ID, License issuance and renewal-->
 
-                        <!--</a>-->
-                        <!--</h3>-->
-                        <!--<p class="content"></p>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-4 col-sm-6">-->
-                        <!--<div class="icon-box icon-box-6">-->
-                        <!--<div class="icon">-->
-                        <!--<a href="services-v1.html">-->
-                        <!--<img src="images/icons/appointment_new_gnome_missed-512.png" alt="Customer Strategy &amp; Marketing" />-->
-                        <!--</a>-->
-                        <!--</div>-->
-                        <!--<h3 class="title">-->
-                        <!--<a href="services-v1.html">Medical insurance issuance and renewal-->
-                        <!--</a>-->
-                        <!--</h3>-->
-                        <!--<p class="content"></p>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-4 col-sm-6">-->
-                        <!--<div class="icon-box icon-box-6">-->
-                        <!--<div class="icon">-->
-                        <!--<a href="services-v1.html">-->
-                        <!--<img src="images/icons/images.png" alt="Financial Services Consulting" />-->
-                        <!--</a>-->
-                        <!--</div>-->
-                        <!--<h3 class="title">-->
-                        <!--<a href="services-v1.html"> Company establishment and renewal services-->
-                        <!--</a>-->
-                        <!--</h3>-->
-                        <!--<p class="content"></p>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-4 col-sm-6">-->
-                        <!--<div class="icon-box icon-box-6">-->
-                        <!--<div class="icon">-->
-                        <!--<a href="services-v1.html">-->
-                        <!--<img src="images/icons/airport.png" alt="Infomation Technology Consulting" />-->
-                        <!--</a>-->
-                        <!--</div>-->
-                        <!--<h3 class="title">-->
-                        <!--<a href="services-v1.html"> Immigration and Passport services (labor contracts, renewal and cancellation)-->
-                        <!--</a>-->
-                        <!--</h3>-->
-                        <!--<p class="content"></p>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--</div>-->
+                    <!--</a>-->
+                    <!--</h3>-->
+                    <!--<p class="content"></p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-6">-->
+                    <!--<div class="icon-box icon-box-6">-->
+                    <!--<div class="icon">-->
+                    <!--<a href="services-v1.html">-->
+                    <!--<img src="images/icons/appointment_new_gnome_missed-512.png" alt="Customer Strategy &amp; Marketing" />-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--<h3 class="title">-->
+                    <!--<a href="services-v1.html">Medical insurance issuance and renewal-->
+                    <!--</a>-->
+                    <!--</h3>-->
+                    <!--<p class="content"></p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-6">-->
+                    <!--<div class="icon-box icon-box-6">-->
+                    <!--<div class="icon">-->
+                    <!--<a href="services-v1.html">-->
+                    <!--<img src="images/icons/images.png" alt="Financial Services Consulting" />-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--<h3 class="title">-->
+                    <!--<a href="services-v1.html"> Company establishment and renewal services-->
+                    <!--</a>-->
+                    <!--</h3>-->
+                    <!--<p class="content"></p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-6">-->
+                    <!--<div class="icon-box icon-box-6">-->
+                    <!--<div class="icon">-->
+                    <!--<a href="services-v1.html">-->
+                    <!--<img src="images/icons/airport.png" alt="Infomation Technology Consulting" />-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--<h3 class="title">-->
+                    <!--<a href="services-v1.html"> Immigration and Passport services (labor contracts, renewal and cancellation)-->
+                    <!--</a>-->
+                    <!--</h3>-->
+                    <!--<p class="content"></p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
 
 
-                        <!--</form>-->
-                </div>
+                    <!--</form>-->
             </div>
         </div>
-    </section>
-    <!-- Our Services / end-->
-    <!-- Why Choose Us / start-->
-    <!--<section class="section why-choose-us-section-1 bg-cover p-t-90 p-b-75 bg-cover js-waypoint" style="background: url(&quot;images/why-choose-us-01.jpg&quot;) center center no-repeat;">-->
-        <!--<div class="container">-->
-            <!--<div class="row">-->
-                <!--<div class="col-md-6"></div>-->
-                <!--<div class="col-md-6">-->
-                    <!--<div class="heading-section heading-section-1 dark">-->
-                        <!--<h3>لماذا نحن</h3>-->
-                    <!--</div>-->
-                    <!--<p class="text-block m-b-25">-->
-                        <!--سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم-->
+    </div>
+</section>
+<!-- MEET OUR TEAM / end-->
+<!-- TESTIMONIALS / start-->
 
-                        <!--دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت-->
 
-                        <!--كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو.-->
-                    <!--</p>-->
-                    <!--<div class="progress-box progress-box-1 m-b-25">-->
-                        <!--<p class="progress-label">ميزة 1 </p>-->
-                        <!--<div class="au-progress au-progress-1">-->
-                            <!--<div class="au-progress-bar" role="progressbar" data-transitiongoal="39">-->
-                                <!--<span></span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="progress-box progress-box-1 m-b-25">-->
-                        <!--<p class="progress-label">ميزة 2</p>-->
-                        <!--<div class="au-progress au-progress-1">-->
-                            <!--<div class="au-progress-bar" role="progressbar" data-transitiongoal="79">-->
-                                <!--<span></span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="progress-box progress-box-1">-->
-                        <!--<p class="progress-label">ميزة 3</p>-->
-                        <!--<div class="au-progress au-progress-1">-->
-                            <!--<div class="au-progress-bar" role="progressbar" data-transitiongoal="55">-->
-                                <!--<span></span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section>-->
-    <!-- Why Choose Us / end-->
-    <!-- Testimonials / start-->
-    <!--<section class="section bg-grey-light p-t-70 p-b-50">-->
-        <!--<div class="container">-->
-            <!--<div class="relative section-testimonials-wrapper-1">-->
-                <!--<div class="heading-section heading-section-1 dark">-->
-                    <!--<h3>اراء العملاء </h3>-->
-                <!--</div>-->
-                <!--<div class="owl-carousel dark nav-style-1" data-carousel-margin="30" data-carousel-nav="true" data-carousel-loop="true" data-carousel-autoplay="true">-->
-                    <!--<div class="image-card image-card-2">-->
-                        <!--<div class="card-top">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-01.jpg" alt="Ann Gilbert" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">عميل </span>-->
-                                <!--<span class="job-title">وظيفة</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card-body">-->
-                            <!--<div class="content">-->
-                                <!--<p>-->
-                                    <!--سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم-->
-
-                                    <!--دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت-->
-
-                                    <!--كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو.                                </p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="image-card image-card-2">-->
-                        <!--<div class="card-top">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-01.jpg" alt="Ann Gilbert" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">عميل </span>-->
-                                <!--<span class="job-title">وظيفة</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card-body">-->
-                            <!--<div class="content">-->
-                                <!--<p>-->
-                                    <!--سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم-->
-
-                                    <!--دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت-->
-
-                                    <!--كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو.                                </p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="image-card image-card-2">-->
-                        <!--<div class="card-top">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-01.jpg" alt="Ann Gilbert" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">عميل </span>-->
-                                <!--<span class="job-title">وظيفة</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card-body">-->
-                            <!--<div class="content">-->
-                                <!--<p>-->
-                                    <!--سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم-->
-
-                                    <!--دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت-->
-
-                                    <!--كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو.                                </p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="image-card image-card-2">-->
-                        <!--<div class="card-top">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-01.jpg" alt="Ann Gilbert" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">عميل </span>-->
-                                <!--<span class="job-title">وظيفة</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card-body">-->
-                            <!--<div class="content">-->
-                                <!--<p>-->
-                                    <!--سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم-->
-
-                                    <!--دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت-->
-
-                                    <!--كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو.                                </p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="image-card image-card-2">-->
-                        <!--<div class="card-top">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-01.jpg" alt="Ann Gilbert" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">عميل </span>-->
-                                <!--<span class="job-title">وظيفة</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card-body">-->
-                            <!--<div class="content">-->
-                                <!--<p>-->
-                                    <!--سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم-->
-
-                                    <!--دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت-->
-
-                                    <!--كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو.                                </p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="image-card image-card-2">-->
-                        <!--<div class="card-top">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-01.jpg" alt="Ann Gilbert" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">عميل </span>-->
-                                <!--<span class="job-title">وظيفة</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card-body">-->
-                            <!--<div class="content">-->
-                                <!--<p>-->
-                                    <!--سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم-->
-
-                                    <!--دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت-->
-
-                                    <!--كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو.                                </p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="image-card image-card-2">-->
-                        <!--<div class="card-top">-->
-                            <!--<div class="avatar">-->
-                                <!--<a href="#">-->
-                                    <!--<img src="images/avatar-01.jpg" alt="Ann Gilbert" />-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="info">-->
-                                <!--<span class="name">عميل </span>-->
-                                <!--<span class="job-title">وظيفة</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card-body">-->
-                            <!--<div class="content">-->
-                                <!--<p>-->
-                                    <!--سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم-->
-
-                                    <!--دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت-->
-
-                                    <!--كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو.                                </p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section>-->
-    <!-- Testimonials / end-->
-    <!-- section / start-->
-    <div class="section bg-parallax p-t-100 p-b-70 bg-cover" style="background: url(&quot;images/27077958-kuwait-wallpapers.jpg&quot;) center center no-repeat;" data-paroller-type="background" data-paroller-factor="-0.3" data-paroller-direction="vertical">
-        <div class="bg-overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3">
-                    <div class="number-box light">
-                        <span class="number counterUp">325</span>
-                        <span class="title">المهام التي نفذت</span>
-                    </div>
+<div class="section bg-parallax p-t-100 p-b-70 bg-cover" style="background: url(&quot;images/27077958-kuwait-wallpapers.jpg&quot;) center center no-repeat;" data-paroller-type="background" data-paroller-factor="-0.3" data-paroller-direction="vertical">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <div class="number-box light">
+                    <span class="number counterUp">325</span>
+                    <span class="title">المهام التي نفذت</span>
                 </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="number-box light">
-                        <span class="number counterUp">25</span>
-                        <span class="title">نسبة العاملين</span>
-                    </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="number-box light">
+                    <span class="number counterUp">25</span>
+                    <span class="title">نسبة العاملين</span>
                 </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="number-box light">
-                        <span class="number counterUp">12</span>
-                        <span class="title">جوائز تم حصدها</span>
-                    </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="number-box light">
+                    <span class="number counterUp">12</span>
+                    <span class="title">جوائز تم حصدها</span>
                 </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="number-box light">
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="number-box light">
                         <span class="number">
                             <span class="counterUp">100</span>
                             <span class="sub">%</span>
                         </span>
-                        <span class="title">نسبة رضاء العملاء</span>
-                    </div>
+                    <span class="title">نسبة رضاء العملاء</span>
                 </div>
             </div>
         </div>
     </div>
-    <!-- section / end-->
-    <!-- section / start-->
-    <div id="con" class="section bg-black p-t-80 p-b-80">
-        <div class="container">
-            <p class="text-block text-grey text-med m-b-45 text-center p-l-100 p-r-100">
-                للتواصل معانا لمعرفة المزيد
-            </p>
+</div>
 
-            <div class="au-form-col-3">
-                <input class="au-input-submit au-btn au-btn-primary au-btn-large btn-block" type="submit" value="ارسال">
-            </div>
-            <div class="au-form-col-3 p-r-5">
-                <input class="au-input" type="text" placeholder="كيف يمكن ان نخدمك">
-            </div>
+</section>
+<!-- TESTIMONIALS / end-->
+<!-- OUR PARTNER / start-->
+<!--<section class="section bg-grey-light p-t-70 p-b-70">-->
+<!--<div class="container">-->
+<!--<div class="relative">-->
+<!--<div class="p-b-15">-->
+<!--<div class="heading-section heading-section-2 dark">-->
+<!--<h3>شركائنا</h3>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="owl-carousel dark nav-style-2" data-carousel-margin="30" data-carousel-nav="true" data-carousel-loop="true" data-carousel-items="5" data-carousel-autoplay="true">-->
+<!--<div class="icon-box icon-box-3">-->
+<!--<div class="icon">-->
+<!--<a href="about-partnerships.html">-->
+<!--<img src="images/partner-01.png" alt="our partner" />-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="icon-box icon-box-3">-->
+<!--<div class="icon">-->
+<!--<a href="about-partnerships.html">-->
+<!--<img src="images/partner-02.png" alt="our partner" />-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="icon-box icon-box-3">-->
+<!--<div class="icon">-->
+<!--<a href="about-partnerships.html">-->
+<!--<img src="images/partner-03.png" alt="our partner" />-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="icon-box icon-box-3">-->
+<!--<div class="icon">-->
+<!--<a href="about-partnerships.html">-->
+<!--<img src="images/partner-04.png" alt="our partner" />-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="icon-box icon-box-3">-->
+<!--<div class="icon">-->
+<!--<a href="about-partnerships.html">-->
+<!--<img src="images/partner-05.png" alt="our partner" />-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="icon-box icon-box-3">-->
+<!--<div class="icon">-->
+<!--<a href="about-partnerships.html">-->
+<!--<img src="images/partner-06.png" alt="our partner" />-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="icon-box icon-box-3">-->
+<!--<div class="icon">-->
+<!--<a href="about-partnerships.html">-->
+<!--<img src="images/partner-07.png" alt="our partner" />-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="icon-box icon-box-3">-->
+<!--<div class="icon">-->
+<!--<a href="about-partnerships.html">-->
+<!--<img src="images/partner-08.png" alt="our partner" />-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!-- OUR PARTNER / end-->
+<div id="con" class="section bg-black p-t-80 p-b-80">
+    <div class="container">
+        <p class="text-block text-grey text-med m-b-45 text-center p-l-100 p-r-100">
+            للتواصل معانا لمعرفة المزيد
+        </p>
 
-                <div class="au-form-col-3 p-r-5">
-                    <input class="au-input" type="text" placeholder="رقم هاتفك: *">
-                </div>
-                <div class="au-form-col-3 p-r-5">
-                    <input class="au-input" type="text" placeholder="اسمك: *">
-                </div>
-
-            </div>
+        <div class="au-form-col-3">
+            <input class="au-input-submit au-btn au-btn-primary au-btn-large btn-block" type="submit" value="ارسال">
         </div>
+        <div class="au-form-col-3 p-r-5">
+            <input class="au-input" type="text" placeholder="كيف يمكن ان نخدمك">
+        </div>
+
+        <div class="au-form-col-3 p-r-5">
+            <input class="au-input" type="text" placeholder="رقم هاتفك: *">
+        </div>
+        <div class="au-form-col-3 p-r-5">
+            <input class="au-input" type="text" placeholder="اسمك: *">
+        </div>
+
     </div>
-    <!-- section / end-->
+</div>
+</div>
+<footer id="footer">
+    <!-- Footer / start-->
+    <div class="footer footer-1 bg-black">
+        <div class="top-footer p-t-50 p-b-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-block-1">
+                            <div class="logo">
+                                <img src="images/one.png" alt="global" />
+                            </div>
+                            <div class="quick-link">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <ul>
+                                            <li style="color: whitesmoke">
+                                                <p>خدمات الرواتب</p>
+                                            </li>
+                                            <li style="color: whitesmoke">
+                                                <p>البطاقة المدنية وإصدار التراخيص والتجديد</p>
+                                            </li>
 
-    <!-- section / start-->
-    <!--<div class="section bg-parallax p-t-100 p-b-70 bg-cover" style="background: url(&quot;images/27077958-kuwait-wallpapers.jpg&quot;) center center no-repeat;" data-paroller-type="background" data-paroller-factor="-0.3" data-paroller-direction="vertical">-->
-        <!--<div class="bg-overlay"></div>-->
-        <!--<div class="container">-->
-            <!--<p class="text-block text-white text-center p-l-100 p-r-100 relative text-lead">عملائنا ، نقدم خدمات للشركات الصغيرة والمتوسطة المنشأة حديثًا أو التي تعمل بالفعل ؛ نحن نستهدف هذه الشركات التي تحتاج إلى الاستعانة بمصادر خارجية للموارد البشرية والمهام الإدارية بغرض تخفيض تكلفتها وخصومها.</p>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!-- section / end-->
-
-    <!-- Our Partner / start-->
-    <!--<section class="section bg-grey-light p-t-70 p-b-70">-->
-        <!--<div class="container">-->
-            <!--<div class="relative">-->
-                <!--<div class="p-b-15">-->
-                    <!--<div class="heading-section heading-section-1 dark">-->
-                        <!--<h3>شركائنا</h3>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="owl-carousel dark nav-style-1" data-carousel-margin="30" data-carousel-nav="true" data-carousel-loop="true" data-carousel-items="5" data-carousel-autoplay="true">-->
-                    <!--<div class="icon-box icon-box-3">-->
-                        <!--<div class="icon">-->
-                            <!--<a href="about-partnerships.html">-->
-                                <!--<img src="images/partner-01.png" alt="our partner" />-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="icon-box icon-box-3">-->
-                        <!--<div class="icon">-->
-                            <!--<a href="about-partnerships.html">-->
-                                <!--<img src="images/partner-02.png" alt="our partner" />-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="icon-box icon-box-3">-->
-                        <!--<div class="icon">-->
-                            <!--<a href="about-partnerships.html">-->
-                                <!--<img src="images/partner-03.png" alt="our partner" />-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="icon-box icon-box-3">-->
-                        <!--<div class="icon">-->
-                            <!--<a href="about-partnerships.html">-->
-                                <!--<img src="images/partner-04.png" alt="our partner" />-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="icon-box icon-box-3">-->
-                        <!--<div class="icon">-->
-                            <!--<a href="about-partnerships.html">-->
-                                <!--<img src="images/partner-05.png" alt="our partner" />-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="icon-box icon-box-3">-->
-                        <!--<div class="icon">-->
-                            <!--<a href="about-partnerships.html">-->
-                                <!--<img src="images/partner-06.png" alt="our partner" />-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="icon-box icon-box-3">-->
-                        <!--<div class="icon">-->
-                            <!--<a href="about-partnerships.html">-->
-                                <!--<img src="images/partner-07.png" alt="our partner" />-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="icon-box icon-box-3">-->
-                        <!--<div class="icon">-->
-                            <!--<a href="about-partnerships.html">-->
-                                <!--<img src="images/partner-08.png" alt="our partner" />-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section>-->
-    <!-- Our Partner / end-->
-    <footer id="footer">
-        <!-- Footer / start-->
-        <div class="footer footer-1 bg-black">
-            <div class="top-footer p-t-50 p-b-50">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="footer-block-1">
-                                <div class="logo">
-                                    <img src="images/one.png" alt="global" />
-                                </div>
-                                <div class="contact-list">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <ul>
-                                                <li style="color: whitesmoke">
-                                                    <p>خدمات الرواتب</p>
-                                                </li>
-                                                <li style="color: whitesmoke">
-                                                    <p>البطاقة المدنية وإصدار التراخيص والتجديد</p>
-                                                </li>
-
-                                                <li style="color: whitesmoke">
-                                                    <p>خدمات الموارد البشرية</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="contact-list col-md-6 col-sm-6">
-                                            <ul>
-                                                <li style="color: whitesmoke">
-                                                    <p>تأسيس شركة وتجديد الخدمات</p>
-                                                </li>
-                                                <li style="color: whitesmoke">
-                                                   إجراءات إقامة العمل
-                                                </li>
-                                                <li style="color: whitesmoke">
-                                                    <p >خدمات الهجرة والجوازات</p>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                            <li style="color: whitesmoke">
+                                                <p>خدمات الموارد البشرية</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="contact-list col-md-6 col-sm-6">
+                                        <ul>
+                                            <li style="color: whitesmoke">
+                                                <p>تأسيس شركة وتجديد الخدمات</p>
+                                            </li>
+                                            <li style="color: whitesmoke">
+                                                إجراءات إقامة العمل
+                                            </li>
+                                            <li style="color: whitesmoke">
+                                                <p >خدمات الهجرة والجوازات</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="footer-block-2">
-                                <div class="title">
-                                    <h3>للتواصل معانا</h3>
-                                </div>
-                                <div class="contact-list">
-                                    <ul>
-                                        <li>شارع الامراء مدينة الكويت</li>
-                                        <li>Phone: (+1) 96 716 6879</li>
-                                        <li>Email: contact@site.com</li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-block-2">
+                            <div class="title">
+                                <h3>للتواصل معانا</h3>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer-block-3">
-                                <div class="title">
-                                    <h3>لمتابعتنا</h3>
-                                </div>
-                                <div class="social-list">
-                                    <ul class="horizontal-list">
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-facebook"></a>
-                                        </li>
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-twitter"></a>
-                                        </li>
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-google-plus"></a>
-                                        </li>
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-linkedin"></a>
-                                        </li>
-                                        <li class="social-item-2 social-item-1">
-                                            <a class="fa fa-instagram"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="contact-list">
+                                <ul>
+                                    <li>مدينة الكويت - شرق </li>
+                                    <li> ابراج مزايا #3 الطابق 17</li>
+                                    <li>هاتف : 22213203</li>
+                                    <li>ايمال : r.rayya@globalserviceskw.com</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="bot-footer">
-                <div class="container">
-                    <div class="block-inner p-t-35 p-b-60">
-                        <div class="block-right">
-                            <span>كل حقوق محفوظة للشركة </span>
-                        </div>
-                        <div class="block-left">
-                            <div class="quick-link">
-                                <ul>
-                                    <!--<li>-->
-                                        <!--<a href="#">من نحن</a>-->
-                                    <!--</li>-->
-                                    <!--<li>-->
-                                        <!--<a href="#">اتصل بنا</a>-->
-                                    <!--</li>-->
+                    <div class="col-md-3">
+                        <div class="footer-block-3">
+                            <div class="title">
+                                <h3>لمتابعتنا</h3>
+                            </div>
+                            <div class="social-list">
+                                <ul class="horizontal-list">
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-facebook"></a>
+                                    </li>
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-twitter"></a>
+                                    </li>
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-google-plus"></a>
+                                    </li>
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-linkedin"></a>
+                                    </li>
+                                    <li class="social-item-2 social-item-1">
+                                        <a class="fa fa-instagram"></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -1140,59 +837,70 @@
                 </div>
             </div>
         </div>
-        <!-- Footer / end-->
-    </footer>
-    <div id="up-to-top">
-        <i class="fa fa-angle-up"></i>
+        <div class="bot-footer">
+            <div class="container">
+                <div class="block-inner p-t-35 p-b-60">
+                    <div class="block-left">
+                        <span>كل حقوق محفوظة للشركة </span>
+                    </div>
+                    <div class="block-right">
+                        <!--<div class="quick-link">-->
+                            <!--<ul>-->
+                                <!--<li>-->
+                                    <!--<a href="#">من نحن</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#">اتصل بنا</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--
-    Javascripts
-    ==================================================
-    -->
-    <script src="js/serve.js"></script>
-    <script src="vendor/jquery/dist/jquery.min.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <script src="vendor/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="vendor/headroom/headroom.min.js"></script>
-    <script src="vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
-    <script src="vendor/SmoothScroll/SmoothScroll.js"></script>
-    <script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
-    <script src="vendor/plyr/plyr.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/jquery-accordion/js/jquery.accordion.js"></script>
-    <script src="vendor/chosen/chosen.jquery.js"></script>
-    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
-    <script src="vendor/paroller.js/jquery.paroller.min.js"></script>
-    <script src="vendor/retinajs/dist/retina.min.js"></script>
-    <script src="js/slide.js"></script>
-    <script src="js/slide2.js"></script>
-    <script src="js/owl-custom.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/momo.js"></script>
-    <script src="js/switcher-custom.js"></script>
-    <script src="vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <!--
-    | (Load Extensions only on Local File Systems !
-    | The following part can be removed on Server for On Demand Loading)
-    -->
-    <script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="js/revo-slider-custom.js"></script>
-    <!--
-        <!--
-        End Document
-        ==================================================
-        -->
+    <!-- Footer / end-->
+</footer>
+<div id="up-to-top">
+    <i class="fa fa-angle-up"></i>
+</div>
+
+<!--
+Javascripts
+==================================================
+-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/slider.js"></script>
+
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<script src="vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="vendor/headroom/headroom.min.js"></script>
+<script src="vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
+<script src="vendor/SmoothScroll/SmoothScroll.js"></script>
+<script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="vendor/plyr/plyr.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="vendor/jquery-accordion/js/jquery.accordion.js"></script>
+<script src="vendor/chosen/chosen.jquery.js"></script>
+<script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
+<script src="vendor/paroller.js/jquery.paroller.min.js"></script>
+<script src="vendor/retinajs/dist/retina.min.js"></script>
+<script src="js/slide.js"></script>
+<script src="js/slide2.js"></script>
+
+<script src="js/owl-custom.js"></script>
+<script src="js/momo.js"></script>
+<script src="js/main.js"></script>
+<script src="js/switcher-custom.js"></script>
+<!--
+End Document
+==================================================
+-->
 </body>
 
 </html>
