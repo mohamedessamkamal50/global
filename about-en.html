@@ -32,10 +32,14 @@
     <link href="css/switcher.css" rel="stylesheet">
     <link href="css/colors/primary.css" rel="stylesheet" id="colors">
     <link href="css/retina.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slider.css">
     <!--
     Favicons
     ==================================================
     -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="shortcut icon" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
@@ -65,12 +69,12 @@
                             <img src="images/one-tablet.png" alt="global">
                         </a>
                     </div>
-                    <div class="search-widget search-widget-1">
-                        <div class="icon-search">
-                            <i class="icon_search"></i>
-                        </div>
-                        <input class="animated" type="text" placeholder="Search" />
-                    </div>
+                    <!--<div class="search-widget search-widget-1">-->
+                        <!--<div class="icon-search">-->
+                            <!--<i class="icon_search"></i>-->
+                        <!--</div>-->
+                        <!--<input class="animated" type="text" placeholder="Search" />-->
+                    <!--</div>-->
                     <button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
@@ -83,12 +87,9 @@
                         <div class="header-content clearfix"> <a class="logo" href="index.html">global service company</a>
                             <nav class="navigation" role="navigation">
                                 <ul class="primary-nav">
-                                    <li><a href="#intro">About</a></li>
-                                    <li><a href="#services">services</a></li>
-                                    <li><a href="#works">Works</a></li>
-                                    <li><a href="#teams">Our Team</a></li>
-                                    <li><a href="#testimonials">Notes</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#serv">services</a></li>
+                                    <li><a href="#con">Contact</a></li>
                                 </ul>
                             </nav>
                             <a href="#" class="nav-toggle">Menu<span></span></a> </div>
@@ -111,8 +112,17 @@
                             <i class="icon_phone"></i>
                         </div>
                         <div class="content">
-                            <p>1-800-123-6889</p>
-                            <p>contact@site.com</p>
+                            <p>22213203</p>
+                            <p>r.rayya@globalserviceskw.com</p>
+                        </div>
+                    </div>
+                    <div class="icon-box icon-box-1">
+                        <div class="icon">
+                            <i class="icon_phone"></i>
+                        </div>
+                        <div class="content">
+                            <p>22213203</p>
+                            <p>globalserviceskw.com</p>
                         </div>
                     </div>
                     <div class="icon-box icon-box-1">
@@ -129,7 +139,7 @@
                             <i class="icon_clock"></i>
                         </div>
                         <div class="content">
-                            <p>09:30 am – 06:00 pm</p>
+                            <p>08:00 am – 05:00 pm</p>
                             <p>Every Day</p>
                         </div>
                     </div>
@@ -138,40 +148,37 @@
         </div>
     </div>
     <div class="hidden-tablet-landscape">
-        <div class="topbar topbar-1 bg-black">
-            <div class="container">
-                <div class="block-left">
-                    <p class="text-block">We are experts in  services and solutions</p>
-                </div>
-                <div class="block-right">
-                    <div class="chosen-lang m-r-25">
-                        <select class="chosen-select" onchange="javascript:handleSelect(this)">
-                            <option value="index-en" selected="">English</option>
-                            <option value="index" >Arabic</option>
-                        </select>
-                    </div>
-                    <ul class="horizontal-list">
-                        <li class="social-item-1">
-                            <a class="fa fa-facebook"></a>
-                        </li>
-                        <li class="social-item-1">
-                            <a class="fa fa-twitter"></a>
-                        </li>
-                        <li class="social-item-1">
-                            <a class="fa fa-google-plus"></a>
-                        </li>
-                        <li class="social-item-1">
-                            <a class="fa fa-linkedin"></a>
-                        </li>
-                        <li class="social-item-1">
-                            <a class="fa fa-instagram"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <!--<div class="topbar topbar-1 bg-black">-->
+            <!--<div class="container">-->
+                <!--<div class="block-left">-->
+                    <!--<p class="text-block">We are experts in  services and solutions</p>-->
+                <!--</div>-->
+                <!--<div class="block-right">-->
+                    <!--<div class="chosen-lang m-r-25">-->
+                        <!--<h2><a style="color: whitesmoke" href="index.html">عربي</a></h2>-->
+                    <!--</div>-->
+                    <!--<ul class="horizontal-list">-->
+                        <!--<li class="social-item-1">-->
+                            <!--<a class="fa fa-facebook"></a>-->
+                        <!--</li>-->
+                        <!--<li class="social-item-1">-->
+                            <!--<a class="fa fa-twitter"></a>-->
+                        <!--</li>-->
+                        <!--<li class="social-item-1">-->
+                            <!--<a class="fa fa-google-plus"></a>-->
+                        <!--</li>-->
+                        <!--<li class="social-item-1">-->
+                            <!--<a class="fa fa-linkedin"></a>-->
+                        <!--</li>-->
+                        <!--<li class="social-item-1">-->
+                            <!--<a class="fa fa-instagram"></a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
         <div class="header header-1">
-            <div class="container">
+            <div class="container ">
                 <div class="block-left">
                     <div class="logo">
                         <a href="index.html">
@@ -186,8 +193,8 @@
                                 <i class="icon_phone"></i>
                             </div>
                             <div class="content">
-                                <p>1-800-123-6889</p>
-                                <p>contact@site.com</p>
+                                <p>22213203    fax : 22213204</p>
+                                <p>r.rayya@globalserviceskw.com</p>
                             </div>
                         </div>
                         <div class="icon-box icon-box-1">
@@ -205,8 +212,10 @@
                                 <i class="icon_clock"></i>
                             </div>
                             <div class="content">
-                                <p>09:30 am – 06:00 pm</p>
-                                <p>Every Day</p>
+
+                                <p>from saturday to thursday</p>
+                                <p>08:00 am – 05:00 pm</p>
+
                             </div>
                         </div>
                     </div>
@@ -241,14 +250,14 @@
                     </div>
                 </nav>
             </div>
-            <!--<div class="block-right">-->
-                <!--<div class="search-widget search-widget-1">-->
-                    <!--<div class="icon-search">-->
-                        <!--<i class="icon_search"></i>-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash;<input class="animated" type="text" placeholder="Search" />&ndash;&gt;-->
-                <!--</div>-->
-            <!--</div>-->
+            <div class="block-right">
+                <div class="search-widget search-widget-1">
+                    <div style="margin-top: 20px" class="  chosen-lang m-r-25">
+                        <h4><a style="color: #0b0b0b" href="index.html">عربي</a></h4>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <!-- header / end-->
@@ -262,11 +271,19 @@
                 <li class="item-1" data-transition="fade">
                     <!-- MAIN IMAGE-->
                     <img class="rev-slidebg" src="images/kuw.jpg" alt="#" />
-                    <h3 style="" class="tp-caption tp-resizeme caption-1" data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:900,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]"
-                        data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['middle']" data-voffset="['-180']" data-width="['770', '770', '770', '480']"> The way of doing HR yourself, LIFTED</h3>
                     <div class=" tp-caption tp-resizeme caption-2 man" data-frames="[{&quot;delay&quot;:1000,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                          data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['30', '0', '0', '40']" data-width="['770', '770', '770', '480']">
-                        We are specialized in Administrative & Human Resources (HR); including all other legal requirements in an effective and efficient manner in order to ensure that you are fully compliant with private sector labor law                    </div>
+                    </div>
+                    <h2 style="margin-top: 200px" class="wow fadeInUp animated cd-headline slide ml4 tp-caption tp-resizeme caption-1" data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:900,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;to&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]"
+                        data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['middle']" data-voffset="['-180']" data-width="['770', '770', '770', '480']">  <span class="cd-words-wrapper">
+                                    <b class="is-visible">The way of doing HR yourself lifted</b>
+                                    <b>We handle the complete payroll for you</b>
+                                    <b>Specialized in Administration &amp; HR</b>
+                                </span>
+
+
+                    </h2>
+
 
                     <div class="tp-caption tp-resizeme caption-3" data-frames="[{&quot;delay&quot;:2000,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
                          data-responsive="on" data-x="['center']" data-hoffset="['0', '0', '0', '0']" data-y="['center']" data-voffset="['180', '150', '150', '250']" data-width="['770', '770', '770', '480']">
@@ -288,7 +305,7 @@
         </div>
         <p class="accordion-title text-block text-center relative p-l-50 p-r-50 m-b-40" style=" font-size: large;  margin-bottom: 180px ; ">
             Global Services Company is a Kuwaiti based firm delivering services such as, Business Setup, Human Resources and Administration Services, in order for our clients to get the documents cleared according to the Kuwait governmental laws, rules and regulations.
-            Our team has a comprehensive knowledge of the Kuwaiti business market and has the ability to analyze and identify the client's requirements to insure that they are adequately complying with the Ministry of Commerce & Industry Commercial laws and regulations as well as the Private Sector Labor Law.
+            Our team has a comprehensive knowledge of the Kuwaiti business market and has the ability to analyze and identify the client's requirements to ensure that they are adequately complying with the Ministry of Commerce & Industry Commercial laws and regulations as well as the Private Sector Labor Law.
             <br>
 
 
@@ -343,7 +360,7 @@
                         <h3>GUARANTEE</h3>
                     </div>
                     <div class="content">
-                        <p>99% accurate, on time, and Hassle free transaction following services in Abu kuwait. Also, Proven for 100% customer satisfaction</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -356,7 +373,7 @@
                         <h3>COMMITMENT</h3>
                     </div>
                     <div class="content">
-                        <p>Our understanding of your business needs and strong commitment to providing excellent quality set us apart from other companies.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -369,7 +386,7 @@
                         <h3>ACCURACY</h3>
                     </div>
                     <div class="content">
-                        <p>Our team adheres 100% accuracy in our services. With global, we ensure you never have to worry about the accuracy of your document.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -382,7 +399,7 @@
                         <h3>SPEED</h3>
                     </div>
                     <div class="content">
-                        <p>We deliver fast, accurate translation following services in kuwait in various sectors. We act as your go to Typing center in kuwait</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -404,24 +421,15 @@
                     <div class="accordion-content animated" data-content>
                         <div class="content-inner">
                             <p>
-                                We are specialized in Administrative & Human Resources (HR); including all other legal requirements in an effective and efficient manner in order to ensure that you are fully compliant with private sector labor law.
+                                Our team has a comprehensive knowledge of the Kuwaiti business market, and has the
+                                ability to analyze and identify the client&#39;s requirements to ensure that they are adequately
+                                complying with the Ministry of Commerce &amp; Industry Commercial laws and regulations
+                                as well as the Private Sector Labor Law.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="accordion m-b-5" data-accordion>
-                    <div class="accordion-title" data-control>
-                        <p>Vision and mission</p>
-                    </div>
-                    <div class="accordion-content animated" data-content>
-                        <div class="content-inner">
-                            <p>
-                                To serve our clients in an effective & efficient manner by delivering our services to them and insure that we comply with Kuwait governmental laws, rules and regulations.
 
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <div class="accordion m-b-5" data-accordion>
                     <div class="accordion-title" data-control>
                         <p>Company Profile</p>
@@ -429,9 +437,9 @@
                     <div class="accordion-content animated" data-content>
                         <div class="content-inner">
                             <p>
-                                Global Services Company is a Kuwaiti based firm delivering services such as, Business Setup, Human Resources and Administration Services, in order for our clients to get the documents cleared according to the Kuwait governmental laws, rules and regulations.
-                                Our team has a comprehensive knowledge of the Kuwaiti business market, and has the ability to analyze and identify the client's requirements to insure that they are adequately complying with the Ministry of Commerce & Industry Commercial laws and regulations as well as the Private Sector Labor Law.
-
+                                Global Services Company is a Kuwaiti based firm delivering services such as, Business
+                                Setup, Human Resources and Administration Services, in order for our clients to get the
+                                documents cleared according to the Kuwait governmental laws, rules and regulations.
                             </p>
                         </div>
                     </div>
@@ -443,7 +451,8 @@
                     <div class="accordion-content animated" data-content>
                         <div class="content-inner">
                             <p>
-                                We highly emphasis the importance of delivering high quality services to insure the clients cost and time efficiency for their business in a professional manner.
+                                We highly emphasis the importance of delivering high quality services to ensure the
+                                clients cost and time efficiency for their business in a professional manner.
                             </p>
                         </div>
                     </div>
@@ -458,8 +467,11 @@
                         <div class="content-inner">
                             <p>
 
-                                Global Services Company is a group of skilled personnel specialized in delivering a variety of services to companies/individuals, our team will by offering their expertise and experience. Therefore the client shall not need to assign a special team to follow-up on his/hers employees or company’s Human Resources and Administrative services at the governmental institutions.
-
+                                Global Services Company is a group of skilled personnel specialized in delivering a
+                                variety of services to companies/individuals, our team will by offering their expertise and
+                                experience. Therefore the client shall not need to assign a special team to follow-up on
+                                his/hers employees or company’s Human Resources and Administrative services at the
+                                governmental institutions.
                             </p>
                         </div>
                     </div>
@@ -473,8 +485,9 @@
                     <div class="accordion-content animated" data-content>
                         <div class="content-inner">
                             <p>
-
-                                We offer services to small-medium companies newly established or already operating; we are targeting such firms that need to outsource the Human Resources and Administrative assignments for the purpose of reducing their cost and liabilities.
+                                We offer services to small-medium companies newly established or already operating;
+                                we are targeting such firms that need to outsource the Human Resources and
+                                Administrative assignments for the purpose of reducing their cost and liabilities.
                             </p>
                         </div>
                     </div>
@@ -724,7 +737,7 @@
 <!-- section / start-->
 <div id="con" class="section bg-black p-t-80 p-b-80">
     <div class="container">
-        <p class="text-block text-grey text-med m-b-45 text-center p-l-100 p-r-100">If you need to speak to us about a general query fill in the form below and we will call you back within the same working day.</p>
+        <p class="text-block text-grey text-med m-b-45 text-center p-l-100 p-r-100">Feel free to contact us any time .</p>
         <div class="au-form-group">
 
             <div class="au-form-col-3 p-r-5">
@@ -745,16 +758,16 @@
 <!-- section / end-->
 
 <!-- section / start-->
-<div class="section bg-parallax p-t-120 p-b-120" style="background: url(&quot;images/27077958-kuwait-wallpapers.jpg&quot;) no-repeat;" data-paroller-type="background" data-paroller-factor="-0.3" data-paroller-direction="vertical">
-    <div class="bg-overlay"></div>
-    <div class="container">
-        <p class="text-block text-white text-center p-l-100 p-r-100 relative text-lead">
-            Our Clients,
-            We offer services to small-medium companies newly established or already operating; we are targeting such firms that need to outsource the Human Resources and Administrative assignments for the purpose of reducing their cost and liabilities.
+<!--<div class="section bg-parallax p-t-120 p-b-120" style="background: url(&quot;images/27077958-kuwait-wallpapers.jpg&quot;) no-repeat;" data-paroller-type="background" data-paroller-factor="-0.3" data-paroller-direction="vertical">-->
+    <!--<div class="bg-overlay"></div>-->
+    <!--<div class="container">-->
+        <!--<p class="text-block text-white text-center p-l-100 p-r-100 relative text-lead">-->
+            <!--Our Clients,-->
+            <!--We offer services to small-medium companies newly established or already operating; we are targeting such firms that need to outsource the Human Resources and Administrative assignments for the purpose of reducing their cost and liabilities.-->
 
-        </p>
-    </div>
-</div>
+        <!--</p>-->
+    <!--</div>-->
+<!--</div>-->
 <!-- section / end-->
 
 <!-- Our Partner / start-->
@@ -923,6 +936,10 @@
 Javascripts
 ==================================================
 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/serve.js"></script>
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
@@ -940,8 +957,9 @@ Javascripts
 <script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
 <script src="vendor/paroller.js/jquery.paroller.min.js"></script>
 <script src="vendor/retinajs/dist/retina.min.js"></script>
+<script src="js/slide.js"></script>
+<script src="js/slide2.js"></script>
 <script src="js/owl-custom.js"></script>
-<script src="js/serve.js"></script>
 <script src="js/main.js"></script>
 <script src="js/momo.js"></script>
 <script src="js/switcher-custom.js"></script>
